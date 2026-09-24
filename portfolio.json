@@ -1,0 +1,188 @@
+{
+  "basics": {
+    "name": "Saad Azfar",
+    "shortName": "Saad",
+    "label": "Student at GU TECH",
+    "headline": "I am a student who is learning WebTech from Sir Umair",
+    "summary": "I am a Student based in Karachi Pakistan who is tryna learn how to live life and also work along side by side.",
+    "location": {
+      "country": "Pakistan",
+      "countryCode": "PK",
+      "region": "Karachi"
+    },
+    "email": "invinciblegaming2048@gmail.com",
+    "availability": "Currently working and help building an educational app which is called Chaajao.",
+    "leadershipNote": "Trusted by fellow students, also maintaining leadership and CR activities.",
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Saad Azfar",
+        "url": "https://www.linkedin.com/in/saad-azfar-59b625179/",
+        "icon": "fa-brands fa-linkedin-in"
+      },
+      {
+        "network": "GitHub",
+        "username": "Phoenix191001",
+        "url": "https://github.com/Phoenix191001",
+        "icon": "fa-brands fa-github"
+      }
+    ]
+  },
+  "about": 
+    {
+  "intro": [
+    "I specialize in basic coding, Arduino prototyping, mechatronics, and web development using WordPress.",
+    "Over the last few years, I have developed machine learning solutions including an AI accessibility project for deaf individuals—and engineered hardware projects such as an automated water level sensing system using Arduino.",
+    "Alongside technical engineering, I bring hands-on expertise in creative media, including digital photography, videography, Photoshop, and video editing."
+  ],
+  "strengths": [
+    "Hardware-software integration and micro-controller prototyping (Arduino/Mechatronics)",
+    "Applied Machine Learning for accessibility and real-world problem-solving",
+    "WordPress site development, custom management, and web services integration",
+    "End-to-end multimedia production, from photography/videography to post-processing"
+  ],
+  "leadershipPillars": [
+    {
+      "title": "Innovation",
+      "description": "Bridging physical hardware, AI models, and web technology to solve practical problems."
+    },
+    {
+      "title": "Execution",
+      "description": "Taking technical concepts from prototype circuits and ML models to fully working systems."
+    },
+    {
+      "title": "Creativity",
+      "description": "Combining engineering precision with visual storytelling through photography, video, and digital media."
+    }
+  ],
+  "metrics": [
+    {
+      "value": "2+",
+      "label": "Years building mechatronics and AI prototypes"
+    },
+    {
+      "value": "3",
+      "label": "Core disciplines: Hardware/Embedded, Web/ML, and Visual Media"
+    },
+    {
+      "value": "100%",
+      "label": "Hands-on ownership across project lifecycles"
+    }
+  ],
+  "skills": [
+    {
+      "category": "Hardware & Mechatronics",
+      "items": [
+        "Arduino",
+        "Sensor Integration",
+        "Circuit Prototyping",
+        "Automated Systems",
+        "Mechatronics Engineering"
+      ]
+    },
+    {
+      "category": "Software & Web",
+      "items": [
+        "Python (Machine Learning)",
+        "Basic C/C++ (Arduino)",
+        "WordPress Services",
+        "HTML/CSS",
+        "SQL Basics"
+      ]
+    },
+    {
+      "category": "Media & Creative Production",
+      "items": [
+        "Adobe Photoshop",
+        "Video Editing (Premiere Pro / DaVinci)",
+        "Digital Photography",
+        "Videography",
+        "Lighting & Framing"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "AI Assistant for Deaf Community",
+      "description": "Designed and developed a machine learning model to bridge communication gaps for deaf individuals, interpreting gestures or visual inputs into actionable data.",
+      "outcome": "Successfully demonstrated applied AI in assistive technology for social impact.",
+      "stack": [
+        "Python",
+        "Machine Learning",
+        "Computer Vision"
+      ]
+    },
+    {
+      "title": "Automatic Water Level Sensing Machine",
+      "description": "Engineered an automated hardware solution using Arduino and ultrasonic/fluid sensors to monitor and control water levels dynamically.",
+      "outcome": "Prevented water overflow and automated pump control for efficient resource usage.",
+      "stack": [
+        "Arduino",
+        "C++",
+        "Sensors & Relays",
+        "Mechatronics"
+      ]
+    },
+    {
+      "title": "WordPress Web Solutions & Media Production",
+      "description": "Developed custom WordPress websites integrated with tailored digital media, custom photography, and promotional video content.",
+      "outcome": "Delivered cohesive digital brand experiences combining clean web setups with professional visual media.",
+      "stack": [
+        "WordPress",
+        "Adobe Photoshop",
+        "Video Editing Software",
+        "Photography Equipment"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Al Ghazali University of Engineering & Technology (GUTECH)",
+      "area": "Undergraduate Studies",
+      "studyType": "Bachelor's Degree",
+      "detailsLabel": "Focus Areas",
+      "details": [
+        "Mechatronics",
+        "Computer Science",
+        "Software & Hardware Integration"
+      ],
+      "startDate": "2026-09-14",
+      "endDate": "Present"
+    },
+    {
+      "institution": "GED Testing Service",
+      "area": "General Educational Development",
+      "studyType": "High School Equivalency Diploma",
+      "detailsLabel": "Completion",
+      "details": [
+        "Comprehensive High School Equivalency Certification"
+      ],
+      "startDate": "2025-06-01",
+      "endDate": "2026-06-06"
+    },
+    {
+      "institution": "The Lab School",
+      "area": "Secondary Education",
+      "studyType": "High School Diploma / Matriculation",
+      "detailsLabel": "Activities & Skills",
+      "details": [
+        "Basic Coding & Microcontrollers",
+        "Arduino Hardware Projects",
+        "Photography & Videography"
+      ],
+      "startDate": "2018-06-01",
+      "endDate": "2024-06-01"
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Fluent"
+    },
+    {
+      "language": "Urdu",
+      "fluency": "Native"
+    }
+  ]
+}
+}
