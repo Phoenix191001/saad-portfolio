@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saad Azfar | Portfolio</title>
-    <meta name="description" content="Portfolio of Saad Azfar - Student at GUTECH, specializing in WebTech, Mechatronics, and Media Production.">
+    <meta name="description" content="Portfolio of Saad Azfar - Student at GUTECH and app developer, building web apps, embedded hardware, and the educational platform Chaajao.">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
@@ -17,21 +17,22 @@
     <nav class="navbar glass">
         <div class="container">
             <a href="#" class="logo">Saad<span>.</span></a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav-actions">
                 <button id="theme-toggle" aria-label="Toggle theme">
                     <i class="fas fa-moon"></i>
                 </button>
-                <div class="mobile-menu-btn">
+                <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </div>
     </nav>
@@ -42,11 +43,12 @@
                 <img src="Snapchat-1128493779.jpg" alt="Saad Azfar" class="profile-img">
             </div>
             <h1 class="reveal delay-1">Saad Azfar</h1>
-            <p class="headline reveal delay-2">Student at GU TECH</p>
-            <p class="hero-summary reveal delay-3">I am a student who is learning WebTech from Sir Umair. I specialize in bridging physical hardware, AI models, and web technology.</p>
+            <p class="headline reveal delay-2">Student at GUTECH &amp; App Developer</p>
+            <p class="hero-summary reveal delay-3">Building modern web applications, embedded hardware systems, and currently helping build the educational platform Chaajao.</p>
             <div class="hero-socials reveal delay-4">
                 <a href="https://github.com/Phoenix191001" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/saad-azfar-59b625179/" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://discord.com/users/mistersaad" target="_blank" class="social-link" title="Discord: @mistersaad"><i class="fab fa-discord"></i></a>
                 <a href="mailto:invinciblegaming2048@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
             <div class="hero-cta reveal delay-5">
@@ -61,9 +63,9 @@
             <h2 class="section-title reveal">About Me</h2>
             <div class="about-grid">
                 <div class="about-text reveal">
-                    <p>I specialize in basic coding, Arduino prototyping, mechatronics, and web development using WordPress.</p>
+                    <p>I specialize in basic coding, Arduino prototyping, mechatronics, and web development. I'm currently focused on expanding my engineering skillset at GUTECH while contributing to real-world tech projects like the educational app Chaajao.</p>
                     <p>Over the last few years, I have developed machine learning solutions including an AI accessibility project for deaf individuals—and engineered hardware projects such as an automated water level sensing system using Arduino.</p>
-                    <p>Alongside technical engineering, I bring hands-on expertise in creative media, including digital photography, videography, Photoshop, and video editing.</p>
+                    <p>Alongside technical engineering, I bring hands-on expertise in creative media, including digital photography, videography, Photoshop, and post-production editing.</p>
                 </div>
                 <div class="metrics-grid">
                     <div class="metric-card glass reveal">
@@ -77,6 +79,40 @@
                     <div class="metric-card glass reveal">
                         <span class="metric-value">100%</span>
                         <span class="metric-label">Hands-on ownership across project lifecycles</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="beyond reveal">
+                <h3 class="beyond-title">Beyond Code &amp; Engineering</h3>
+                <div class="beyond-layout">
+                    <figure class="beyond-photo">
+                        <img src="goalkeeper.jpg" alt="Saad Azfar in goalkeeper kit on a floodlit futsal pitch" loading="lazy">
+                    </figure>
+                    <div class="beyond-grid">
+                        <div class="beyond-card glass">
+                            <i class="fas fa-hands"></i>
+                            <h4>Goalkeeper</h4>
+                            <p>Holding down the net in Football &amp; Futsal — driven by positioning, quick reflexes, and leading from the back.</p>
+                        </div>
+                        <div class="beyond-card glass">
+                            <i class="fas fa-gamepad"></i>
+                            <h4>Competitive &amp; Story Gaming</h4>
+                            <p>Active tactical and open-world player across favorite titles:</p>
+                            <div class="tags">
+                                <span class="tag">Valorant</span>
+                                <span class="tag">CS2</span>
+                                <span class="tag">Rocket League</span>
+                                <span class="tag">Rematch</span>
+                                <span class="tag">RDR2</span>
+                                <span class="tag">GTA V</span>
+                            </div>
+                        </div>
+                        <div class="beyond-card glass">
+                            <i class="fas fa-book-open"></i>
+                            <h4>Book Reader</h4>
+                            <p>Continuous learner exploring software engineering concepts, creative ideas, and world perspectives.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,6 +275,27 @@
                 </div>
             </div>
         </section>
+
+        <section id="contact" class="section container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <div class="contact-grid">
+                <a href="mailto:invinciblegaming2048@gmail.com" class="contact-card glass reveal">
+                    <i class="fas fa-envelope"></i>
+                    <span class="contact-label">Email</span>
+                    <span class="contact-value">invinciblegaming2048@gmail.com</span>
+                </a>
+                <a href="tel:+923053667100" class="contact-card glass reveal">
+                    <i class="fas fa-phone"></i>
+                    <span class="contact-label">Phone</span>
+                    <span class="contact-value">0305 3667100</span>
+                </a>
+                <a href="https://discord.com/users/mistersaad" target="_blank" class="contact-card glass reveal">
+                    <i class="fab fa-discord"></i>
+                    <span class="contact-label">Discord</span>
+                    <span class="contact-value">@mistersaad</span>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -246,12 +303,13 @@
             <div class="footer-content">
                 <div class="footer-info">
                     <a href="#" class="logo">Saad<span>.</span></a>
-                    <p>Building the bridge between hardware, software, and creative media.</p>
+                    <p>Building web apps, hardware systems, and creative media.</p>
                 </div>
                 <div class="footer-socials">
                     <a href="https://github.com/Phoenix191001" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/saad-azfar-59b625179/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:invinciblegaming2048@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://discord.com/users/mistersaad" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="mailto:invinciblegaming2048@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>
             <div class="footer-bottom">

@@ -74,15 +74,30 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Mobile Menu Toggle (Simplified)
+    // Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navLinks = document.querySelector('.nav-links');
 
-    if (mobileMenuBtn) {
+    if (mobileMenuBtn && navLinks) {
+        const setMenu = (open) => {
+            navLinks.classList.toggle('open', open);
+            mobileMenuBtn.classList.toggle('open', open);
+            mobileMenuBtn.setAttribute('aria-expanded', String(open));
+        };
+
         mobileMenuBtn.addEventListener('click', () => {
-            // This is a placeholder for actual mobile menu logic if needed
-            // For now, let's just log or toggle a class
-            console.log('Mobile menu clicked');
+            setMenu(!navLinks.classList.contains('open'));
+        });
+
+        // Close after choosing a link, pressing Escape, or resizing to desktop
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => setMenu(false));
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') setMenu(false);
+        });
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) setMenu(false);
         });
     }
 });
