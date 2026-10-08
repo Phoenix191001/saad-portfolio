@@ -87,7 +87,8 @@
         "Basic C/C++ (Arduino)",
         "WordPress Services",
         "HTML/CSS",
-        "SQL Basics"
+        "SQL Basics",
+        "Figma (UI/UX Design)"
       ]
     },
     {
@@ -97,7 +98,8 @@
         "Video Editing (Premiere Pro / DaVinci)",
         "Digital Photography",
         "Videography",
-        "Lighting & Framing"
+        "Lighting & Framing",
+        "Social Media Management"
       ]
     }
   ],
@@ -268,6 +270,27 @@
         "Marbles",
         "Air blower",
         "Water turbine"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "organization": "Chaajao",
+      "role": "Contributor, product research and design",
+      "status": "Contributes occasionally",
+      "highlights": [
+        "Helped build version 2.0 of the Chaajao app",
+        "Researched new features for the platform",
+        "Helped design the mobile app and the web version in Figma"
+      ]
+    },
+    {
+      "organization": "SAT",
+      "role": "Social media and video production",
+      "highlights": [
+        "Managed the Instagram, Facebook and YouTube pages",
+        "Shot and edited videos for the channels",
+        "Designed posts for the social media pages"
       ]
     }
   ]
