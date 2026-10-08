@@ -702,6 +702,8 @@ img { max-width: 100%; display: block; }
 .exp-stats-note { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); margin-bottom: 20px; }
 
 .behind { padding-top: 64px; }
+.gallery-hint { margin-top: 40px; text-align: center; }
+.gallery-hint .card-link { margin-top: 0; }
 .tabs { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px; }
 .tab { display: inline-flex; align-items: center; gap: 8px; padding: 9px 18px; font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); background: transparent; border: 1px solid var(--border); border-radius: 50px; cursor: pointer; transition: var(--transition); }
 .tab:hover { color: var(--text-color); border-color: var(--accent-color); }
