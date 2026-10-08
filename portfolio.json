@@ -251,5 +251,14 @@
     "Goalkeeper (Football & Futsal)",
     "Competitive & story gaming: Valorant, CS2, Rocket League, Rematch, RDR2, GTA V",
     "Reading"
+  ],
+  "achievements": [
+    {
+      "title": "Selected to represent Pakistan at the FIRST Global Challenge",
+      "category": "Technical Challenge",
+      "description": "My school and I were selected to represent Pakistan at the FIRST Global Challenge in the Technical Challenge, where we built a Rube Goldberg machine.",
+      "project": "Rube Goldberg Machine",
+      "video": "https://www.youtube.com/watch?v=MmqB8WJmO0U"
+    }
   ]
 }

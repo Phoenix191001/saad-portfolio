@@ -670,6 +670,13 @@ img { max-width: 100%; display: block; }
 .video-embed.playing { cursor: default; }
 .video-embed:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
 
+.achievement { display: grid; grid-template-columns: 1.3fr 1fr; gap: 0; overflow: hidden; }
+.achievement .video-embed { margin: 0; border: 0; border-right: 1px solid var(--border); border-radius: 0; aspect-ratio: auto; min-height: 320px; height: 100%; }
+.achievement-text { padding: 36px; display: flex; flex-direction: column; justify-content: center; }
+.achievement-text h3 { font-size: 1.6rem; line-height: 1.25; margin-bottom: 14px; }
+.achievement-text p { color: var(--text-muted); margin-bottom: 20px; }
+.achievement-text .project-stack { margin-bottom: 0; }
+
 /* Contact */
 .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 920px; margin: 0 auto; }
 
@@ -750,6 +757,9 @@ img { max-width: 100%; display: block; }
     .pillars-grid { grid-template-columns: repeat(2, 1fr); }
     .beyond-layout, .contact-grid { grid-template-columns: 1fr; }
     .project-featured, .project-featured.has-gallery { grid-template-columns: 1fr; }
+    .achievement { grid-template-columns: 1fr; }
+    .achievement .video-embed { aspect-ratio: 16 / 9; min-height: 0; height: auto; border-right: 0; border-bottom: 1px solid var(--border); }
+    .achievement-text { padding: 28px 24px; }
     .project-gallery { min-height: 360px; border-right: 0; border-bottom: 1px solid var(--border); }
     .project-photo { min-height: 320px; max-height: 460px; border-right: 0; border-bottom: 1px solid var(--border); }
     .beyond-photo { min-height: 360px; max-height: 520px; }
