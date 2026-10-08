@@ -106,8 +106,8 @@
   "projects": [
     {
       "title": "Line Following Robot",
-      "description": "Autonomous line following robot built for the Robotron '26 competition on 7 February 2026, using an Arduino, an L298 motor driver module and a front-mounted line sensor array.",
-      "outcome": "Built for Robotron '26 (7 Feb 2026).",
+      "description": "Autonomous line following robot of the kind used in robotics competitions such as Robotron and Edvon, using an Arduino, an L298 motor driver module and a front-mounted line sensor array.",
+      "outcome": "Competition-style robot, as seen at events like Robotron and Edvon.",
       "stack": [
         "Arduino",
         "L298 Motor Driver",
@@ -125,8 +125,7 @@
         "Buck Converter",
         "Fabrication"
       ],
-      "image": "robo-sumo.webp",
-      "competition": "Robotron '26"
+      "image": "robo-sumo.webp"
     },
     {
       "title": "Robo Race Car",
@@ -137,8 +136,7 @@
         "4WD Chassis",
         "C++"
       ],
-      "image": "robo-race.webp",
-      "competition": "Robotron '26"
+      "image": "robo-race.webp"
     },
     {
       "title": "DIY Generator",
