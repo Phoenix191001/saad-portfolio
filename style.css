@@ -512,6 +512,8 @@ img { max-width: 100%; display: block; }
 .timeline-item:nth-child(3) > * { grid-column: 3; }
 
 .timeline-content { position: relative; padding: 26px; }
+.timeline-content:has(.timeline-thumb) { overflow: visible; }
+.timeline-thumb { margin: -26px -26px 20px; border-radius: var(--radius) var(--radius) 0 0; }
 .timeline-item:nth-child(odd) .timeline-content { grid-row: 1; align-self: end; }
 .timeline-item:nth-child(even) .timeline-content { grid-row: 3; align-self: start; }
 
