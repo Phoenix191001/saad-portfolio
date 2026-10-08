@@ -29,9 +29,9 @@
     ]
   },
   "intro": [
-    "I specialize in basic coding, Arduino prototyping, mechatronics, and web development. I'm currently focused on expanding my engineering skillset at GUTECH while contributing to real-world tech projects like the educational app Chaajao.",
-    "Over the last few years, I have developed machine learning solutions including an AI accessibility project for deaf individuals—and engineered hardware projects such as an automated water level sensing system using Arduino.",
-    "Alongside technical engineering, I bring hands-on expertise in creative media, including digital photography, videography, Photoshop, and post-production editing."
+    "I'm a student at GUTECH in Karachi, studying mechatronics and computer science. I like building things that actually work: robots that follow lines and push opponents out of a ring, a water level controller, and parts I design myself in Tinkercad and print on a 3D printer.",
+    "I work with Chaajao (https://www.chaajao.com), an educational platform. I helped build version 2.0, researched new features, and helped design the app and web version in Figma. I also shoot, edit and publish videos and posts for Chaajao SAT's social media channels.",
+    "Robotics competitions have been a big part of my journey. I represented Pakistan at the FIRST Global Challenge in 2020, volunteered at Robotron 1.0 and 2.0, and came back to Robotron '26 as an organizer and event judge."
   ],
   "strengths": [
     "Hardware-software integration and micro-controller prototyping (Arduino/Mechatronics)",
@@ -55,16 +55,16 @@
   ],
   "metrics": [
     {
-      "value": "2+",
-      "label": "Years building mechatronics and AI prototypes"
+      "value": "15th",
+      "label": "Global Leaderboard rank at the FIRST Global Challenge, representing Pakistan (2020)"
+    },
+    {
+      "value": "5",
+      "label": "Robotics events: FIRST Global, Robotron 1.0, 2.0 and '26, and Edvon League 5.0"
     },
     {
       "value": "3",
-      "label": "Core disciplines: Hardware/Embedded, Web/ML, and Visual Media"
-    },
-    {
-      "value": "100%",
-      "label": "Hands-on ownership across project lifecycles"
+      "label": "Core disciplines: Hardware, Web/ML, and Media"
     }
   ],
   "skills": [
@@ -302,7 +302,8 @@
         "Helped design the mobile app and the web version in Figma",
         "Supervised live classes in the studio setup",
         "Maintained the day-wise teacher management dashboard and chapter tracking in Google Sheets"
-      ]
+      ],
+      "url": "https://www.chaajao.com"
     },
     {
       "organization": "Chaajao SAT",
@@ -323,7 +324,8 @@
         "instagramStories": 38,
         "facebookReach": "132.4K",
         "instagramReach": "150.2K"
-      }
+      },
+      "video": "https://www.youtube.com/shorts/Q0datTnuw_Q"
     }
   ],
   "photography": [

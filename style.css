@@ -690,6 +690,11 @@ img { max-width: 100%; display: block; }
 .experience-card h3 { font-size: 1.35rem; line-height: 1.3; margin-bottom: 6px; }
 .experience-sub { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; }
 .experience-card .project-stack { margin-bottom: 0; }
+.text-link { color: var(--accent-color); border-bottom: 1px dashed var(--accent-color); }
+.text-link:hover { color: var(--accent-2); border-bottom-color: var(--accent-2); }
+.card-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 20px; font-family: var(--font-mono); font-size: 0.85rem; color: var(--accent-color); }
+.card-link:hover { color: var(--accent-2); transform: translateX(3px); }
+.video-embed.vertical { aspect-ratio: 9 / 16; max-width: 220px; margin: 4px auto 22px; }
 .exp-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 8px; }
 .exp-stats > div { padding: 14px 10px; text-align: center; border: 1px solid var(--border-strong); border-radius: var(--radius); background: var(--accent-soft); }
 .exp-stat-value { display: block; font-family: var(--font-mono); font-size: 1.4rem; font-weight: 700; color: var(--accent-color); line-height: 1.2; }
@@ -751,7 +756,8 @@ img { max-width: 100%; display: block; }
 .contact-card:hover { transform: translateY(-6px); }
 .contact-card i { font-size: 1.7rem; color: var(--accent-color); margin-bottom: 12px; }
 .contact-label { font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); }
-.contact-value { font-size: 1rem; font-weight: 600; word-break: break-word; }
+.contact-value { font-size: 0.95rem; font-weight: 600; overflow-wrap: anywhere; max-width: 100%; }
+.contact-value[href], .contact-card[href^="mailto"] .contact-value { font-size: 0.88rem; letter-spacing: -0.2px; }
 
 /* Footer */
 .footer { padding: 70px 0 36px; border-top: 1px solid var(--border); }
