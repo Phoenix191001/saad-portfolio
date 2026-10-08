@@ -691,6 +691,13 @@ img { max-width: 100%; display: block; }
 .exp-stats-note { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); margin-bottom: 20px; }
 
 .behind { padding-top: 64px; }
+.tabs { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 24px; }
+.tab { display: inline-flex; align-items: center; gap: 8px; padding: 9px 18px; font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); background: transparent; border: 1px solid var(--border); border-radius: 50px; cursor: pointer; transition: var(--transition); }
+.tab:hover { color: var(--text-color); border-color: var(--accent-color); }
+.tab[aria-selected="true"] { color: var(--on-accent); background: var(--accent-color); border-color: var(--accent-color); box-shadow: 0 0 20px var(--accent-glow); }
+.tab:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
+.tab-count { font-size: 0.72rem; opacity: 0.75; }
+.tab-panel[hidden] { display: none; }
 .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
 .gallery-item { position: relative; aspect-ratio: 4 / 5; overflow: hidden; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); transition: var(--transition); }
 .gallery-item:hover { border-color: var(--border-strong); box-shadow: 0 12px 40px -12px var(--accent-glow); }

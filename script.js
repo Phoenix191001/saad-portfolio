@@ -101,6 +101,29 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Tabs (gallery groups)
+    document.querySelectorAll('.tabs').forEach(list => {
+        const tabs = Array.from(list.querySelectorAll('[role="tab"]'));
+        const panels = tabs.map(t => document.getElementById(t.getAttribute('aria-controls')));
+        const select = (index, focus) => {
+            tabs.forEach((t, i) => {
+                const on = i === index;
+                t.setAttribute('aria-selected', String(on));
+                t.tabIndex = on ? 0 : -1;
+                panels[i].hidden = !on;
+            });
+            if (focus) tabs[index].focus();
+        };
+        tabs.forEach((t, i) => {
+            t.addEventListener('click', () => select(i));
+            t.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight') { e.preventDefault(); select((i + 1) % tabs.length, true); }
+                if (e.key === 'ArrowLeft') { e.preventDefault(); select((i - 1 + tabs.length) % tabs.length, true); }
+            });
+        });
+        select(0);
+    });
+
     // Navbar background on scroll
     const navbar = document.querySelector('.navbar');
     const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 50);

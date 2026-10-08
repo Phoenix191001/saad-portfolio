@@ -272,15 +272,20 @@
             </div>
 
             <div class="behind reveal">
-                <h3 class="beyond-title">// Behind the Scenes</h3>
-                <div class="gallery-grid">
+                <h3 class="beyond-title">// Behind the Scenes at Chaajao</h3>
+                <div class="tabs" role="tablist" aria-label="Behind the scenes at Chaajao groups">
+                    <button type="button" role="tab" id="tab-filming" aria-controls="panel-filming" aria-selected="true" class="tab">Filming <span class="tab-count">4</span></button>
+                    <button type="button" role="tab" id="tab-editing" aria-controls="panel-editing" aria-selected="false" class="tab" tabindex="-1">Editing &amp; Content <span class="tab-count">5</span></button>
+                </div>
+                <div role="tabpanel" id="panel-filming" aria-labelledby="tab-filming" class="tab-panel">
+                    <div class="gallery-grid">
                     <figure class="gallery-item">
                         <img src="shoot-setup.webp" alt="Studio lights and a camera on tripods set up in an empty room before a shoot" style="object-position: 50% 50%" loading="lazy">
                         <figcaption>Setting up for a shoot</figcaption>
                     </figure>
                     <figure class="gallery-item">
                         <img src="promo-shoot.webp" alt="Camera on a tripod filming a person seated at a desk for promotional content" style="object-position: 50% 45%" loading="lazy">
-                        <figcaption>Filming promotional video content</figcaption>
+                        <figcaption>Filming promotional video content for Chaajao</figcaption>
                     </figure>
                     <figure class="gallery-item">
                         <img src="live-class-2.webp" alt="Teacher writing on the Chaajao smart board during a live class, with studio lights and a monitor in the foreground" style="object-position: 50% 40%" loading="lazy">
@@ -290,6 +295,10 @@
                         <img src="lecture-recording.webp" alt="Teacher seated in front of a smart board showing an atoms lesson while a camera on a tripod records him" style="object-position: 50% 40%" loading="lazy">
                         <figcaption>Recording a lecture</figcaption>
                     </figure>
+                    </div>
+                </div>
+                <div role="tabpanel" id="panel-editing" aria-labelledby="tab-editing" class="tab-panel">
+                    <div class="gallery-grid">
                     <figure class="gallery-item">
                         <img src="premiere-edit.webp" alt="Adobe Premiere Pro timeline with video and audio tracks open on a laptop" style="object-position: 50% 55%" loading="lazy">
                         <figcaption>Editing in Premiere Pro</figcaption>
@@ -310,6 +319,7 @@
                         <img src="sheets.webp" alt="Laptop showing a colour-coded Google Sheets teacher management dashboard next to a folder of converted chapters" style="object-position: 40% 50%" loading="lazy">
                         <figcaption>Maintaining Chaajao tracking sheets</figcaption>
                     </figure>
+                    </div>
                 </div>
             </div>
 
