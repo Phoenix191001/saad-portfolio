@@ -2,16 +2,16 @@
   "basics": {
     "name": "Saad Azfar",
     "shortName": "Saad",
-    "label": "Student at GU TECH",
-    "headline": "I am a student who is learning WebTech from Sir Umair",
-    "summary": "I am a Student based in Karachi Pakistan who is tryna learn how to live life and also work along side by side.",
+    "label": "Student at GUTECH & App Developer",
+    "headline": "Building modern web applications, embedded hardware systems, and the educational platform Chaajao.",
+    "summary": "Student at GUTECH based in Karachi, Pakistan, working across web development, Arduino/mechatronics, machine learning and creative media.",
     "location": {
       "country": "Pakistan",
       "countryCode": "PK",
       "region": "Karachi"
     },
     "email": "invinciblegaming2048@gmail.com",
-    "availability": "Currently working and help building an educational app which is called Chaajao.",
+    "availability": "Currently helping build the educational app Chaajao.",
     "leadershipNote": "Trusted by fellow students, also maintaining leadership and CR activities.",
     "profiles": [
       {
@@ -28,12 +28,10 @@
       }
     ]
   },
-  "about": 
-    {
   "intro": [
-    "I specialize in basic coding, Arduino prototyping, mechatronics, and web development using WordPress.",
+    "I specialize in basic coding, Arduino prototyping, mechatronics, and web development. I'm currently focused on expanding my engineering skillset at GUTECH while contributing to real-world tech projects like the educational app Chaajao.",
     "Over the last few years, I have developed machine learning solutions including an AI accessibility project for deaf individuals—and engineered hardware projects such as an automated water level sensing system using Arduino.",
-    "Alongside technical engineering, I bring hands-on expertise in creative media, including digital photography, videography, Photoshop, and video editing."
+    "Alongside technical engineering, I bring hands-on expertise in creative media, including digital photography, videography, Photoshop, and post-production editing."
   ],
   "strengths": [
     "Hardware-software integration and micro-controller prototyping (Arduino/Mechatronics)",
@@ -183,6 +181,10 @@
       "language": "Urdu",
       "fluency": "Native"
     }
+  ],
+  "interests": [
+    "Goalkeeper (Football & Futsal)",
+    "Competitive & story gaming: Valorant, CS2, Rocket League, Rematch, RDR2, GTA V",
+    "Reading"
   ]
-}
 }
