@@ -328,6 +328,10 @@
     {
       "title": "Golden hour on the road",
       "image": "photo-drive.webp"
+    },
+    {
+      "title": "In focus, street blurred",
+      "image": "photo-diffuser.webp"
     }
   ]
 }
