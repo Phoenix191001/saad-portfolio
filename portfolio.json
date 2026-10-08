@@ -106,8 +106,8 @@
   "projects": [
     {
       "title": "Line Following Robot",
-      "description": "Autonomous line following robot built for the upcoming Robotron '26 competition, using an Arduino, an L298 motor driver module and a front-mounted line sensor array.",
-      "outcome": "Built and being tuned for Robotron '26.",
+      "description": "Autonomous line following robot built for the Robotron '26 competition on 7 February 2026, using an Arduino, an L298 motor driver module and a front-mounted line sensor array.",
+      "outcome": "Built for Robotron '26 (7 Feb 2026).",
       "stack": [
         "Arduino",
         "L298 Motor Driver",
@@ -378,7 +378,8 @@
         "Organizer",
         "Event Judge"
       ],
-      "recognition": "Award in recognition and appreciation of valuable contribution as an event judge"
+      "recognition": "Award in recognition and appreciation of valuable contribution as an event judge",
+      "date": "2026-02-07"
     },
     {
       "event": "Robotron 2.0",
