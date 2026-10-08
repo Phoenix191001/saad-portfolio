@@ -26,10 +26,11 @@
         "url": "https://github.com/Phoenix191001",
         "icon": "fa-brands fa-github"
       }
-    ]
+    ],
+    "url": "https://saad-portfolio-saad-4985.vercel.app"
   },
   "intro": [
-    "I'm a student at GUTECH in Karachi, studying mechatronics and computer science. I like building things that actually work: robots that follow lines and push opponents out of a ring, a water level controller, and parts I design myself in Tinkercad and print on a 3D printer.",
+    "I'm a student at GUTECH in Karachi, studying computer science. I picked up mechatronics and Arduino at The Lab School, and I like building things that actually work: robots that follow lines and push opponents out of a ring, a water level controller, and parts I design myself in Tinkercad and print on a 3D printer.",
     "I work with Chaajao (https://www.chaajao.com), an educational platform. I helped build version 2.0, researched new features, and helped design the app and web version in Figma. I also shoot, edit and publish videos and posts for Chaajao SAT's social media channels.",
     "Robotics competitions have been a big part of my journey. I represented Pakistan at the FIRST Global Challenge in 2020, volunteered at Robotron 1.0 and 2.0, and came back to Robotron '26 as an organizer and event judge."
   ],
@@ -225,7 +226,6 @@
       "studyType": "Bachelor's Degree",
       "detailsLabel": "Focus Areas",
       "details": [
-        "Mechatronics",
         "Computer Science",
         "Software & Hardware Integration"
       ],
@@ -251,6 +251,7 @@
       "details": [
         "Basic Coding & Microcontrollers",
         "Arduino Hardware Projects",
+        "Mechatronics",
         "Photography & Videography",
         "Represented Pakistan at the FIRST Global Challenge (2020), 15th on the Global Leaderboard"
       ],
