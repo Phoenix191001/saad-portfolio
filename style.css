@@ -677,8 +677,9 @@ img { max-width: 100%; display: block; }
 .achievement-text p { color: var(--text-muted); margin-bottom: 20px; }
 .achievement-text .project-stack { margin-bottom: 0; }
 
-.experience-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
-.experience-card { padding: 32px; }
+.experience-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; align-items: start; }
+.experience-card { padding: 32px; overflow: hidden; }
+.experience-card .project-thumb { margin: -32px -32px 24px; }
 .experience-card:hover { transform: translateY(-6px); }
 .experience-card h3 { font-size: 1.35rem; line-height: 1.3; margin-bottom: 6px; }
 .experience-sub { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px; }
