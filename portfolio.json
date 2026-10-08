@@ -256,9 +256,11 @@
     {
       "title": "Selected to represent Pakistan at the FIRST Global Challenge",
       "category": "Technical Challenge",
-      "description": "My school and I were selected to represent Pakistan at the FIRST Global Challenge in the Technical Challenge, where we built a Rube Goldberg machine.",
+      "description": "My school and I were selected to represent Pakistan at the FIRST Global Challenge in the Technical Challenge on 14 August 2020, where we built a Rube Goldberg machine and placed 15th on the Global Leaderboard.",
       "project": "Rube Goldberg Machine",
-      "video": "https://www.youtube.com/watch?v=MmqB8WJmO0U"
+      "video": "https://www.youtube.com/watch?v=MmqB8WJmO0U",
+      "date": "2020-08-14",
+      "result": "15th on the Global Leaderboard"
     }
   ]
 }
