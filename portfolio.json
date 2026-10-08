@@ -295,5 +295,15 @@
         "Designed posts for the social media pages"
       ]
     }
+  ],
+  "photography": [
+    {
+      "title": "Waves, low angle",
+      "image": "photo-waves.webp"
+    },
+    {
+      "title": "Footprints on the shore",
+      "image": "photo-shore.webp"
+    }
   ]
 }
