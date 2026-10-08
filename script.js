@@ -86,6 +86,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Click-to-play YouTube embeds (loads the player only when requested)
+    document.querySelectorAll('.video-embed').forEach(box => {
+        box.addEventListener('click', () => {
+            if (box.classList.contains('playing')) return;
+            const iframe = document.createElement('iframe');
+            iframe.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(box.dataset.videoId) + '?autoplay=1&rel=0';
+            iframe.title = box.dataset.title || 'Video';
+            iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+            iframe.allowFullscreen = true;
+            box.replaceChildren(iframe);
+            box.classList.add('playing');
+            box.removeAttribute('aria-label');
+        });
+    });
+
     // Navbar background on scroll
     const navbar = document.querySelector('.navbar');
     const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 50);
