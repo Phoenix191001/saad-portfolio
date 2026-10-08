@@ -352,6 +352,56 @@
     {
       "title": "In focus, street blurred",
       "image": "photo-diffuser.webp"
+    },
+    {
+      "title": "Setup after dark",
+      "image": "photo-setup.webp"
+    },
+    {
+      "title": "Night drive, light trails",
+      "image": "photo-night-drive.webp"
+    },
+    {
+      "title": "Speed blur, daytime",
+      "image": "photo-day-blur.webp"
+    }
+  ],
+  "events": [
+    {
+      "event": "Robotron '26",
+      "organization": "The Lab School, powered by First Gear",
+      "roles": [
+        "Organizer",
+        "Event Judge"
+      ],
+      "recognition": "Award in recognition and appreciation of valuable contribution as an event judge"
+    },
+    {
+      "event": "Robotron 2.0",
+      "date": "2023-11-07",
+      "organization": "SRET, The Lab School",
+      "roles": [
+        "Volunteer"
+      ],
+      "recognition": "Certificate of Participation"
+    },
+    {
+      "event": "Robotron 1.0",
+      "date": "December 3-4",
+      "organization": "SRET, The Lab School",
+      "roles": [
+        "Volunteer"
+      ],
+      "recognition": "Certificate of Participation"
+    },
+    {
+      "event": "Edvon Robotics League 5.0",
+      "date": "2022-08-24 to 2022-08-26",
+      "location": "Expo Center, Karachi",
+      "roles": [
+        "Participant"
+      ],
+      "recognition": "Certificate of Participation"
     }
   ]
 }

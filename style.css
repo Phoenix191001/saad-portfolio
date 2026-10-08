@@ -711,6 +711,8 @@ img { max-width: 100%; display: block; }
 .gallery-item:hover img { transform: scale(1.04); }
 .gallery-item figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 28px 14px 12px; font-family: var(--font-mono); font-size: 0.78rem; color: #fff; background: linear-gradient(transparent, rgba(0, 0, 0, 0.85)); }
 
+.gallery-grid.landscape { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); margin-top: 24px; }
+.landscape .gallery-item { aspect-ratio: 4 / 3; }
 .gallery-item { cursor: zoom-in; }
 .gallery-item.wide { grid-column: span 2; aspect-ratio: auto; }
 .gallery-item:focus-visible { outline: 2px solid var(--accent-color); outline-offset: 2px; }
