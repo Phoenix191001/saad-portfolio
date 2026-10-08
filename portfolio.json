@@ -293,7 +293,18 @@
         "Shot and edited SAT exam prep videos in Adobe Premiere Pro, such as Bluebook practice test walkthroughs",
         "Published the finished videos to the YouTube channel",
         "Designed posts for the social media pages"
-      ]
+      ],
+      "insights": {
+        "source": "Meta Business Suite",
+        "period": "Aug 2 - Aug 8",
+        "contentPublished": 175,
+        "facebookPosts": 36,
+        "facebookStories": 68,
+        "instagramPosts": 33,
+        "instagramStories": 38,
+        "facebookReach": "132.4K",
+        "instagramReach": "150.2K"
+      }
     }
   ],
   "photography": [
