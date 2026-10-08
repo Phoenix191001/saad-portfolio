@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.key === 'Escape') setMenu(false);
         });
         window.addEventListener('resize', () => {
-            if (window.innerWidth > 768) setMenu(false);
+            if (window.innerWidth > 960) setMenu(false);
         });
     }
 });
