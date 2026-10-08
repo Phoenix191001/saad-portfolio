@@ -123,7 +123,8 @@
         "Buck Converter",
         "Fabrication"
       ],
-      "image": "robo-sumo.webp"
+      "image": "robo-sumo.webp",
+      "competition": "Robotron '26"
     },
     {
       "title": "Robo Race Car",
@@ -134,7 +135,8 @@
         "4WD Chassis",
         "C++"
       ],
-      "image": "robo-race.webp"
+      "image": "robo-race.webp",
+      "competition": "Robotron '26"
     },
     {
       "title": "DIY Generator",
