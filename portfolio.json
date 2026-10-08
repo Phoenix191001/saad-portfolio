@@ -167,6 +167,26 @@
       ]
     },
     {
+      "title": "Affinity Diagram: Hospital Emergency Room Study",
+      "description": "Design thinking project where my team grouped observations of a public hospital emergency room into themes with an affinity diagram, then turned them into Point-of-View statements and How-Might-We questions.",
+      "clusters": [
+        "Registration & Payment Bottlenecks",
+        "Infrastructure & Unhygienic Conditions"
+      ],
+      "outcome": "Turned scattered observations into focused problems worth solving.",
+      "stack": [
+        "Design Thinking",
+        "Affinity Diagram",
+        "POV & HMW",
+        "User Research"
+      ],
+      "images": [
+        "design-thinking-board.webp",
+        "design-thinking-1.webp",
+        "design-thinking-2.webp"
+      ]
+    },
+    {
       "title": "AI Assistant for Deaf Community",
       "description": "Designed and developed a machine learning model to bridge communication gaps for deaf individuals, interpreting gestures or visual inputs into actionable data.",
       "outcome": "Successfully demonstrated applied AI in assistive technology for social impact.",
