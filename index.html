@@ -10,19 +10,22 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar glass">
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">Saad<span>.</span></a>
+            <a href="#" class="logo">&lt;saad<span>/&gt;</span></a>
             <ul class="nav-links" id="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about"><span class="idx">01</span>about</a></li>
+                <li><a href="#skills"><span class="idx">02</span>skills</a></li>
+                <li><a href="#education"><span class="idx">03</span>education</a></li>
+                <li><a href="#projects"><span class="idx">04</span>projects</a></li>
+                <li><a href="#contact"><span class="idx">05</span>contact</a></li>
             </ul>
             <div class="nav-actions">
                 <button id="theme-toggle" aria-label="Toggle theme">
@@ -37,30 +40,37 @@
         </div>
     </nav>
 
-    <header class="hero container section">
-        <div class="hero-content text-center">
-            <div class="profile-img-container reveal">
-                <img src="Snapchat-1128493779.jpg" alt="Saad Azfar" class="profile-img">
+    <header class="hero container">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <p class="eyebrow reveal"><span class="dot"></span> available for interesting projects</p>
+                <h1 class="reveal delay-1">Saad<br>Azfar<span class="cursor">_</span></h1>
+                <p class="headline reveal delay-2">&gt; <span id="typed" data-words="Student at GUTECH|App Developer|Arduino Tinkerer|Photographer"></span><span class="caret"></span></p>
+                <p class="hero-summary reveal delay-3">Building modern web applications, embedded hardware systems, and currently helping build the educational platform Chaajao.</p>
+                <div class="hero-cta reveal delay-4">
+                    <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
+                    <a href="#about" class="btn btn-outline">About Me</a>
+                </div>
+                <div class="hero-socials reveal delay-5">
+                    <a href="https://github.com/Phoenix191001" target="_blank" rel="noopener" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/saad-azfar-59b625179/" target="_blank" rel="noopener" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://discord.com/users/mistersaad" target="_blank" rel="noopener" class="social-link" title="Discord: @mistersaad"><i class="fab fa-discord"></i></a>
+                    <a href="mailto:invinciblegaming2048@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
-            <h1 class="reveal delay-1">Saad Azfar</h1>
-            <p class="headline reveal delay-2">Student at GUTECH &amp; App Developer</p>
-            <p class="hero-summary reveal delay-3">Building modern web applications, embedded hardware systems, and currently helping build the educational platform Chaajao.</p>
-            <div class="hero-socials reveal delay-4">
-                <a href="https://github.com/Phoenix191001" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/saad-azfar-59b625179/" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://discord.com/users/mistersaad" target="_blank" class="social-link" title="Discord: @mistersaad"><i class="fab fa-discord"></i></a>
-                <a href="mailto:invinciblegaming2048@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-            <div class="hero-cta reveal delay-5">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#about" class="btn btn-outline">About Me</a>
+            <div class="hero-visual reveal delay-2">
+                <div class="profile-frame">
+                    <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+                    <img src="Snapchat-1128493779.jpg" alt="Saad Azfar" class="profile-img">
+                    <div class="profile-tag">saad@gutech:~$ whoami</div>
+                </div>
             </div>
         </div>
     </header>
 
     <main>
         <section id="about" class="section container">
-            <h2 class="section-title reveal">About Me</h2>
+            <h2 class="section-title reveal"><span class="idx">01</span> About Me</h2>
             <div class="about-grid">
                 <div class="about-text reveal">
                     <p>I specialize in basic coding, Arduino prototyping, mechatronics, and web development. I'm currently focused on expanding my engineering skillset at GUTECH while contributing to real-world tech projects like the educational app Chaajao.</p>
@@ -68,15 +78,15 @@
                     <p>Alongside technical engineering, I bring hands-on expertise in creative media, including digital photography, videography, Photoshop, and post-production editing.</p>
                 </div>
                 <div class="metrics-grid">
-                    <div class="metric-card glass reveal">
+                    <div class="metric-card card reveal">
                         <span class="metric-value">2+</span>
                         <span class="metric-label">Years building mechatronics and AI prototypes</span>
                     </div>
-                    <div class="metric-card glass reveal">
+                    <div class="metric-card card reveal">
                         <span class="metric-value">3</span>
                         <span class="metric-label">Core disciplines: Hardware, Web/ML, and Media</span>
                     </div>
-                    <div class="metric-card glass reveal">
+                    <div class="metric-card card reveal">
                         <span class="metric-value">100%</span>
                         <span class="metric-label">Hands-on ownership across project lifecycles</span>
                     </div>
@@ -84,18 +94,18 @@
             </div>
 
             <div class="beyond reveal">
-                <h3 class="beyond-title">Beyond Code &amp; Engineering</h3>
+                <h3 class="beyond-title">// Beyond Code &amp; Engineering</h3>
                 <div class="beyond-layout">
                     <figure class="beyond-photo">
                         <img src="goalkeeper.jpg" alt="Saad Azfar in goalkeeper kit on a floodlit futsal pitch" loading="lazy">
                     </figure>
                     <div class="beyond-grid">
-                        <div class="beyond-card glass">
+                        <div class="beyond-card card">
                             <i class="fas fa-hands"></i>
                             <h4>Goalkeeper</h4>
                             <p>Holding down the net in Football &amp; Futsal — driven by positioning, quick reflexes, and leading from the back.</p>
                         </div>
-                        <div class="beyond-card glass">
+                        <div class="beyond-card card">
                             <i class="fas fa-gamepad"></i>
                             <h4>Competitive &amp; Story Gaming</h4>
                             <p>Active tactical and open-world player across favorite titles:</p>
@@ -108,7 +118,7 @@
                                 <span class="tag">GTA V</span>
                             </div>
                         </div>
-                        <div class="beyond-card glass">
+                        <div class="beyond-card card">
                             <i class="fas fa-book-open"></i>
                             <h4>Book Reader</h4>
                             <p>Continuous learner exploring software engineering concepts, creative ideas, and world perspectives.</p>
@@ -117,18 +127,18 @@
                 </div>
             </div>
 
-            <div class="pillars-grid section">
-                <div class="pillar-card glass reveal">
+            <div class="pillars-grid">
+                <div class="pillar-card card reveal">
                     <i class="fas fa-lightbulb"></i>
                     <h3>Innovation</h3>
                     <p>Bridging physical hardware, AI models, and web technology to solve practical problems.</p>
                 </div>
-                <div class="pillar-card glass reveal">
+                <div class="pillar-card card reveal">
                     <i class="fas fa-rocket"></i>
                     <h3>Execution</h3>
                     <p>Taking technical concepts from prototype circuits and ML models to fully working systems.</p>
                 </div>
-                <div class="pillar-card glass reveal">
+                <div class="pillar-card card reveal">
                     <i class="fas fa-palette"></i>
                     <h3>Creativity</h3>
                     <p>Combining engineering precision with visual storytelling through photography, video, and digital media.</p>
@@ -136,12 +146,12 @@
             </div>
         </section>
 
-        <section id="skills" class="section glass-bg">
+        <section id="skills" class="section band">
             <div class="container">
-                <h2 class="section-title reveal">Expertise & Skills</h2>
+                <h2 class="section-title reveal"><span class="idx">02</span> Expertise &amp; Skills</h2>
                 <div class="skills-grid">
-                    <div class="skill-category glass reveal">
-                        <h3>Hardware & Mechatronics</h3>
+                    <div class="skill-category card reveal">
+                        <h3><i class="fas fa-microchip"></i> Hardware &amp; Mechatronics</h3>
                         <div class="tags">
                             <span class="tag">Arduino</span>
                             <span class="tag">Sensor Integration</span>
@@ -150,8 +160,8 @@
                             <span class="tag">Mechatronics Engineering</span>
                         </div>
                     </div>
-                    <div class="skill-category glass reveal">
-                        <h3>Software & Web</h3>
+                    <div class="skill-category card reveal">
+                        <h3><i class="fas fa-code"></i> Software &amp; Web</h3>
                         <div class="tags">
                             <span class="tag">Python (ML)</span>
                             <span class="tag">Basic C/C++ (Arduino)</span>
@@ -160,14 +170,14 @@
                             <span class="tag">SQL Basics</span>
                         </div>
                     </div>
-                    <div class="skill-category glass reveal">
-                        <h3>Media & Creative Production</h3>
+                    <div class="skill-category card reveal">
+                        <h3><i class="fas fa-camera"></i> Media &amp; Creative Production</h3>
                         <div class="tags">
                             <span class="tag">Adobe Photoshop</span>
                             <span class="tag">Video Editing (Premiere/DaVinci)</span>
                             <span class="tag">Digital Photography</span>
                             <span class="tag">Videography</span>
-                            <span class="tag">Lighting & Framing</span>
+                            <span class="tag">Lighting &amp; Framing</span>
                         </div>
                     </div>
                 </div>
@@ -175,27 +185,27 @@
         </section>
 
         <section id="education" class="section container">
-            <h2 class="section-title reveal">Education</h2>
+            <h2 class="section-title reveal"><span class="idx">03</span> Education</h2>
             <div class="timeline">
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content glass">
+                    <div class="timeline-content card">
                         <span class="timeline-date">2026 - Present</span>
-                        <h3>Al Ghazali University of Engineering & Technology (GUTECH)</h3>
+                        <h3>Al Ghazali University of Engineering &amp; Technology (GUTECH)</h3>
                         <p class="timeline-subtitle">Bachelor's Degree in Undergraduate Studies</p>
                         <div class="timeline-details">
                             <strong>Focus Areas:</strong>
                             <ul>
                                 <li>Mechatronics</li>
                                 <li>Computer Science</li>
-                                <li>Software & Hardware Integration</li>
+                                <li>Software &amp; Hardware Integration</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content glass">
+                    <div class="timeline-content card">
                         <span class="timeline-date">2025 - 2026</span>
                         <h3>GED Testing Service</h3>
                         <p class="timeline-subtitle">High School Equivalency Diploma</p>
@@ -209,16 +219,16 @@
                 </div>
                 <div class="timeline-item reveal">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content glass">
+                    <div class="timeline-content card">
                         <span class="timeline-date">2018 - 2024</span>
                         <h3>The Lab School</h3>
                         <p class="timeline-subtitle">High School Diploma / Matriculation</p>
                         <div class="timeline-details">
-                            <strong>Activities & Skills:</strong>
+                            <strong>Activities &amp; Skills:</strong>
                             <ul>
-                                <li>Basic Coding & Microcontrollers</li>
+                                <li>Basic Coding &amp; Microcontrollers</li>
                                 <li>Arduino Hardware Projects</li>
-                                <li>Photography & Videography</li>
+                                <li>Photography &amp; Videography</li>
                             </ul>
                         </div>
                     </div>
@@ -226,12 +236,13 @@
             </div>
         </section>
 
-        <section id="projects" class="section glass-bg">
+        <section id="projects" class="section band">
             <div class="container">
-                <h2 class="section-title reveal">Featured Projects</h2>
+                <h2 class="section-title reveal"><span class="idx">04</span> Featured Projects</h2>
                 <div class="projects-grid">
-                    <div class="project-card glass reveal">
+                    <div class="project-card card reveal">
                         <div class="project-content">
+                            <span class="project-num">PRJ_01</span>
                             <h3>AI Assistant for Deaf Community</h3>
                             <p>Designed and developed a machine learning model to bridge communication gaps for deaf individuals, interpreting gestures or visual inputs into actionable data.</p>
                             <div class="project-stack">
@@ -244,23 +255,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-card glass reveal">
+                    <div class="project-card card reveal">
                         <div class="project-content">
+                            <span class="project-num">PRJ_02</span>
                             <h3>Automatic Water Level Sensing Machine</h3>
                             <p>Engineered an automated hardware solution using Arduino and ultrasonic/fluid sensors to monitor and control water levels dynamically.</p>
                             <div class="project-stack">
                                 <span class="stack-tag">Arduino</span>
                                 <span class="stack-tag">C++</span>
-                                <span class="stack-tag">Sensors & Relays</span>
+                                <span class="stack-tag">Sensors &amp; Relays</span>
                             </div>
                             <div class="project-links">
                                 <span class="outcome"><strong>Outcome:</strong> Prevented water overflow and automated pump control.</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card glass reveal">
+                    <div class="project-card card reveal">
                         <div class="project-content">
-                            <h3>WordPress Web Solutions & Media</h3>
+                            <span class="project-num">PRJ_03</span>
+                            <h3>WordPress Web Solutions &amp; Media</h3>
                             <p>Developed custom WordPress websites integrated with tailored digital media, custom photography, and promotional video content.</p>
                             <div class="project-stack">
                                 <span class="stack-tag">WordPress</span>
@@ -277,19 +290,19 @@
         </section>
 
         <section id="contact" class="section container">
-            <h2 class="section-title reveal">Get In Touch</h2>
+            <h2 class="section-title reveal"><span class="idx">05</span> Get In Touch</h2>
             <div class="contact-grid">
-                <a href="mailto:invinciblegaming2048@gmail.com" class="contact-card glass reveal">
+                <a href="mailto:invinciblegaming2048@gmail.com" class="contact-card card reveal">
                     <i class="fas fa-envelope"></i>
                     <span class="contact-label">Email</span>
                     <span class="contact-value">invinciblegaming2048@gmail.com</span>
                 </a>
-                <a href="tel:+923053667100" class="contact-card glass reveal">
+                <a href="tel:+923053667100" class="contact-card card reveal">
                     <i class="fas fa-phone"></i>
                     <span class="contact-label">Phone</span>
                     <span class="contact-value">0305 3667100</span>
                 </a>
-                <a href="https://discord.com/users/mistersaad" target="_blank" class="contact-card glass reveal">
+                <a href="https://discord.com/users/mistersaad" target="_blank" rel="noopener" class="contact-card card reveal">
                     <i class="fab fa-discord"></i>
                     <span class="contact-label">Discord</span>
                     <span class="contact-value">@mistersaad</span>
@@ -302,13 +315,13 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <a href="#" class="logo">Saad<span>.</span></a>
+                    <a href="#" class="logo">&lt;saad<span>/&gt;</span></a>
                     <p>Building web apps, hardware systems, and creative media.</p>
                 </div>
                 <div class="footer-socials">
-                    <a href="https://github.com/Phoenix191001" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/saad-azfar-59b625179/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://discord.com/users/mistersaad" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="https://github.com/Phoenix191001" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/saad-azfar-59b625179/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://discord.com/users/mistersaad" target="_blank" rel="noopener" title="Discord"><i class="fab fa-discord"></i></a>
                     <a href="mailto:invinciblegaming2048@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
                 </div>
             </div>

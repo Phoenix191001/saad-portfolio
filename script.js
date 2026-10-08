@@ -1,78 +1,96 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
     // Theme Toggle Logic
     const themeToggle = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement;
     const themeIcon = themeToggle.querySelector('i');
 
-    // Check for saved theme
-    const savedTheme = localStorage.getItem('theme') || 'dark';
+    let savedTheme = 'dark';
+    try { savedTheme = localStorage.getItem('theme') || 'dark'; } catch (e) { /* storage unavailable */ }
     htmlElement.setAttribute('data-theme', savedTheme);
     updateThemeIcon(savedTheme);
 
     themeToggle.addEventListener('click', () => {
-        const currentTheme = htmlElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
+        const newTheme = htmlElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
         htmlElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
+        try { localStorage.setItem('theme', newTheme); } catch (e) { /* storage unavailable */ }
         updateThemeIcon(newTheme);
     });
 
     function updateThemeIcon(theme) {
-        if (theme === 'dark') {
-            themeIcon.className = 'fas fa-sun';
+        themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+    }
+
+    // Typing effect for the hero headline
+    const typed = document.getElementById('typed');
+    if (typed) {
+        const words = typed.dataset.words.split('|');
+        if (reduceMotion) {
+            typed.textContent = words[0];
         } else {
-            themeIcon.className = 'fas fa-moon';
+            let w = 0;
+            let i = 0;
+            let deleting = false;
+            const tick = () => {
+                const word = words[w];
+                i += deleting ? -1 : 1;
+                typed.textContent = word.slice(0, i);
+
+                let delay = deleting ? 40 : 80;
+                if (!deleting && i === word.length) {
+                    deleting = true;
+                    delay = 1600;
+                } else if (deleting && i === 0) {
+                    deleting = false;
+                    w = (w + 1) % words.length;
+                    delay = 350;
+                }
+                setTimeout(tick, delay);
+            };
+            tick();
         }
     }
 
     // Scroll Reveal Animation
     const revealElements = document.querySelectorAll('.reveal');
-
-    const revealOnScroll = () => {
-        const triggerBottom = window.innerHeight * 0.85;
-
-        revealElements.forEach(el => {
-            const elTop = el.getBoundingClientRect().top;
-
-            if (elTop < triggerBottom) {
-                el.classList.add('active');
-            }
-        });
-    };
-
-    window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Run once on load
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+        revealElements.forEach(el => observer.observe(el));
+    } else {
+        revealElements.forEach(el => el.classList.add('active'));
+    }
 
     // Smooth scroll for nav links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const href = this.getAttribute('href');
+            if (href === '#') {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+                return;
+            }
+            const target = document.querySelector(href);
             if (target) {
-                const headerOffset = 80;
-                const elementPosition = target.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: 'smooth'
-                });
+                e.preventDefault();
+                const offsetPosition = target.getBoundingClientRect().top + window.pageYOffset - 70;
+                window.scrollTo({ top: offsetPosition, behavior: reduceMotion ? 'auto' : 'smooth' });
             }
         });
     });
 
-    // Navbar transparency on scroll
+    // Navbar background on scroll
     const navbar = document.querySelector('.navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.style.padding = '12px 0';
-            navbar.style.background = 'var(--nav-bg)';
-        } else {
-            navbar.style.padding = '16px 0';
-            navbar.style.background = 'transparent';
-        }
-    });
+    const onScroll = () => navbar.classList.toggle('scrolled', window.scrollY > 50);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
 
     // Mobile Menu Toggle
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
