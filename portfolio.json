@@ -101,6 +101,18 @@
   ],
   "projects": [
     {
+      "title": "Line Following Robot",
+      "description": "Autonomous line following robot built for the upcoming Robotron '26 competition, using an Arduino, an L298 motor driver module and a front-mounted line sensor array.",
+      "outcome": "Built and being tuned for Robotron '26.",
+      "stack": [
+        "Arduino",
+        "L298 Motor Driver",
+        "Line Sensors",
+        "C++"
+      ],
+      "image": "line-follower-1.webp"
+    },
+    {
       "title": "AI Assistant for Deaf Community",
       "description": "Designed and developed a machine learning model to bridge communication gaps for deaf individuals, interpreting gestures or visual inputs into actionable data.",
       "outcome": "Successfully demonstrated applied AI in assistive technology for social impact.",
