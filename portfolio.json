@@ -75,7 +75,9 @@
         "Sensor Integration",
         "Circuit Prototyping",
         "Automated Systems",
-        "Mechatronics Engineering"
+        "Mechatronics Engineering",
+        "3D Printing",
+        "Tinkercad (3D Design)"
       ]
     },
     {
@@ -111,6 +113,54 @@
         "C++"
       ],
       "image": "line-follower-1.webp"
+    },
+    {
+      "title": "Robo Sumo Bot",
+      "description": "Compact, heavy sumo robot with a black body, front wedge, grippy green wheels, two IBT-2 motor driver boards and an Arduino Uno.",
+      "stack": [
+        "Arduino Uno",
+        "IBT-2 Motor Drivers",
+        "Buck Converter",
+        "Fabrication"
+      ],
+      "image": "robo-sumo.webp"
+    },
+    {
+      "title": "Robo Race Car",
+      "description": "Four-wheel-drive racing robot on a clear acrylic chassis with four geared motors driven through an L298 module and an Arduino Uno.",
+      "stack": [
+        "Arduino Uno",
+        "L298 Module",
+        "4WD Chassis",
+        "C++"
+      ],
+      "image": "robo-race.webp"
+    },
+    {
+      "title": "DIY Generator",
+      "description": "Hand-built electric generator made from nails and copper wire coils, built to understand electromagnetic induction.",
+      "stack": [
+        "Copper Wire Coils",
+        "Electromagnetism",
+        "Hands-on Prototyping"
+      ],
+      "image": "generator.webp"
+    },
+    {
+      "title": "3D Design & Printing",
+      "description": "Learned to design parts in Tinkercad and print them on a Bambu Lab A1 3D printer, including enclosures, brackets, a custom nameplate and a lettered cube.",
+      "outcome": "Can take an idea from a Tinkercad model to a finished print.",
+      "stack": [
+        "Tinkercad",
+        "3D Printing",
+        "Bambu Lab A1",
+        "CAD Design"
+      ],
+      "images": [
+        "3d-printer.webp",
+        "3d-parts.webp",
+        "3d-cube.webp"
+      ]
     },
     {
       "title": "AI Assistant for Deaf Community",
