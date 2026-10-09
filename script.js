@@ -149,7 +149,9 @@ document.addEventListener('DOMContentLoaded', () => {
         lightbox.classList.toggle('single', lbItems.length < 2);
     };
 
-    document.querySelectorAll('.gallery-item, .project-gallery figure').forEach(item => {
+    const wireGalleryItem = (item) => {
+        if (item.dataset.wired) return;
+        item.dataset.wired = '1';
         const cap = item.querySelector('figcaption');
         item.tabIndex = 0;
         item.setAttribute('role', 'button');
@@ -162,9 +164,12 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         item.addEventListener('click', open);
         item.addEventListener('keydown', (e) => {
+            if (e.target !== item) return;
             if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
         });
-    });
+    };
+    document.querySelectorAll('.gallery-item, .project-gallery figure').forEach(wireGalleryItem);
+    window.PortfolioUI = { wireGalleryItem };
 
     lightbox.querySelector('.lb-close').addEventListener('click', () => lightbox.close());
     lightbox.querySelector('.lb-prev').addEventListener('click', () => showPhoto(lbIndex - 1));
