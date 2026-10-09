@@ -296,16 +296,24 @@
   "experience": [
     {
       "organization": "Chaajao",
-      "role": "Contributor, product research and design",
+      "role": "SAT Assistant (contributor, product research and design)",
       "status": "Contributes occasionally",
       "highlights": [
+        "Served as a SAT Assistant at Chaajao Technologies (certified, 2 Aug 2025 - 31 Aug 2026)",
         "Helped build version 2.0 of the Chaajao app",
         "Researched new features for the platform",
         "Helped design the mobile app and the web version in Figma",
         "Supervised live classes in the studio setup",
         "Maintained the day-wise teacher management dashboard and chapter tracking in Google Sheets"
       ],
-      "url": "https://www.chaajao.com"
+      "url": "https://www.chaajao.com",
+      "startDate": "2025-08-02",
+      "endDate": "2026-08-31",
+      "certificate": {
+        "title": "Certificate of Experience",
+        "file": "chaajao-certificate.pdf",
+        "image": "chaajao-certificate.webp"
+      }
     },
     {
       "organization": "Chaajao SAT",

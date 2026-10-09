@@ -915,3 +915,14 @@ img { max-width: 100%; display: block; }
 
 /* Projects page */
 .projects-page { padding-top: 40px; }
+
+/* Certificate preview */
+.cert-box { display: flex; align-items: center; gap: 16px; margin-top: 22px; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--accent-soft); }
+.cert-box figure { flex: 0 0 150px; aspect-ratio: 3 / 2; overflow: hidden; border: 1px solid var(--border); border-radius: 4px; background: #fff; cursor: zoom-in; }
+.cert-box figure:hover { border-color: var(--accent-color); }
+.cert-box img { width: 100%; height: 100%; object-fit: cover; }
+.cert-info { display: grid; gap: 4px; }
+.cert-title { font-weight: 600; font-size: 0.95rem; }
+.cert-sub { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
+.cert-info .card-link { margin-top: 6px; font-size: 0.8rem; }
+@media (max-width: 480px) { .cert-box { flex-direction: column; align-items: flex-start; } .cert-box figure { flex-basis: auto; width: 100%; } }

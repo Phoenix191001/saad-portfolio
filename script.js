@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.setAttribute('role', 'button');
         item.setAttribute('aria-label', 'View larger: ' + (cap ? cap.textContent : (item.dataset.caption || item.querySelector('img').alt || 'photo')));
         const open = () => {
-            const group = item.closest('.gallery-grid, .project-gallery');
+            const group = item.closest('.gallery-grid, .project-gallery, .cert-box');
             lbItems = Array.from(group.querySelectorAll('.gallery-item, figure'));
             showPhoto(lbItems.indexOf(item));
             if (typeof lightbox.showModal === 'function') lightbox.showModal();
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
         });
     };
-    document.querySelectorAll('.gallery-item, .project-gallery figure').forEach(wireGalleryItem);
+    document.querySelectorAll('.gallery-item, .project-gallery figure, .cert-box figure').forEach(wireGalleryItem);
     window.PortfolioUI = { wireGalleryItem };
 
     lightbox.querySelector('.lb-close').addEventListener('click', () => lightbox.close());
