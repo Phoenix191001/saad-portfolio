@@ -833,7 +833,7 @@ img { max-width: 100%; display: block; }
     .beyond-photo { min-height: 360px; max-height: 520px; }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1060px) {
     .mobile-menu-btn { display: flex; }
 
     .nav-links {
@@ -916,13 +916,17 @@ img { max-width: 100%; display: block; }
 /* Projects page */
 .projects-page { padding-top: 40px; }
 
-/* Certificate preview */
-.cert-box { display: flex; align-items: center; gap: 16px; margin-top: 22px; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--accent-soft); }
-.cert-box figure { flex: 0 0 150px; aspect-ratio: 3 / 2; overflow: hidden; border: 1px solid var(--border); border-radius: 4px; background: #fff; cursor: zoom-in; }
-.cert-box figure:hover { border-color: var(--accent-color); }
-.cert-box img { width: 100%; height: 100%; object-fit: cover; }
-.cert-info { display: grid; gap: 4px; }
-.cert-title { font-weight: 600; font-size: 0.95rem; }
-.cert-sub { font-size: 0.8rem; color: var(--text-muted); line-height: 1.5; }
-.cert-info .card-link { margin-top: 6px; font-size: 0.8rem; }
-@media (max-width: 480px) { .cert-box { flex-direction: column; align-items: flex-start; } .cert-box figure { flex-basis: auto; width: 100%; } }
+/* Certificates section */
+.cert-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.cert-card { overflow: hidden; }
+.cert-card:hover { transform: translateY(-6px); }
+.cert-card figure { aspect-ratio: 3 / 2; overflow: hidden; border-bottom: 1px solid var(--border); background: #fff; cursor: zoom-in; }
+.cert-card figure img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.cert-card:hover figure img { transform: scale(1.04); }
+.cert-body { display: grid; gap: 6px; padding: 24px; }
+.cert-body h3 { font-size: 1.2rem; line-height: 1.3; }
+.cert-body .cert-sub { color: var(--text-muted); font-size: 0.9rem; }
+.cert-body .cert-date { font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-color); }
+.cert-body .card-link { margin-top: 8px; font-size: 0.82rem; }
+@media (max-width: 992px) { .cert-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .cert-grid { grid-template-columns: 1fr; } }

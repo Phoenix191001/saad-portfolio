@@ -308,12 +308,7 @@
       ],
       "url": "https://www.chaajao.com",
       "startDate": "2025-08-02",
-      "endDate": "2026-08-31",
-      "certificate": {
-        "title": "Certificate of Experience",
-        "file": "chaajao-certificate.pdf",
-        "image": "chaajao-certificate.webp"
-      }
+      "endDate": "2026-08-31"
     },
     {
       "organization": "Chaajao SAT",
@@ -417,6 +412,46 @@
         "Participant"
       ],
       "recognition": "Certificate of Participation"
+    }
+  ],
+  "certificates": [
+    {
+      "title": "Chaajao Technologies",
+      "type": "Certificate of Experience",
+      "detail": "SAT Assistant",
+      "startDate": "2025-08-02",
+      "endDate": "2026-08-31",
+      "image": "chaajao-certificate.webp",
+      "file": "chaajao-certificate.pdf"
+    },
+    {
+      "title": "Robotron '26: Event Judge",
+      "type": "Award",
+      "detail": "Recognition and appreciation of valuable contribution as an event judge. The Lab School, powered by First Gear.",
+      "date": "2026-02-07",
+      "image": "cert-robotron-26-award.webp"
+    },
+    {
+      "title": "Robotron 2.0",
+      "type": "Certificate of Participation",
+      "detail": "Volunteer. Organized by SRET, The Lab School. Sponsored by Feroze 1888 and Chaajao.",
+      "date": "2023-11-07",
+      "image": "cert-robotron-2.webp"
+    },
+    {
+      "title": "Robotron 1.0",
+      "type": "Certificate of Participation",
+      "detail": "Volunteer. Inter-school robotics competition organized by SRET, The Lab School.",
+      "date": "2022-12",
+      "image": "cert-robotron-1.webp"
+    },
+    {
+      "title": "Edvon Robotics League 5.0",
+      "type": "Certificate of Participation",
+      "detail": "Participant. Expo Center, Karachi.",
+      "startDate": "2022-08-24",
+      "endDate": "2022-08-26",
+      "image": "cert-edvon.webp"
     }
   ]
 }
