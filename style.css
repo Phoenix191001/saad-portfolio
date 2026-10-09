@@ -912,3 +912,6 @@ img { max-width: 100%; display: block; }
 .od-form button:disabled { opacity: 0.6; cursor: wait; }
 .owner-toast { position: fixed; left: 50%; bottom: 24px; transform: translateX(-50%); z-index: 3000; max-width: min(92vw, 520px); padding: 14px 18px; font-size: 0.9rem; color: var(--text-color); background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--radius); box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5); }
 .owner-toast.error { border-color: #ff6b6b; }
+
+/* Projects page */
+.projects-page { padding-top: 40px; }

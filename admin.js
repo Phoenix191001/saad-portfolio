@@ -186,7 +186,7 @@
                 setToken(token);
                 d.close();
                 enable();
-                toast('Logged in. Add buttons are now showing on the Projects section and the Gallery page.');
+                toast('Logged in. Add buttons are now showing on the Projects page and the Gallery page.');
             } catch (ex) {
                 err.textContent = ex.message;
                 busy(form, false);

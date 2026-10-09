@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Saad Azfar</title>
+    <meta name="description" content="Projects by Saad Azfar: line following, sumo and racing robots, a DIY generator, 3D printing, design thinking research and more.">
+    <link rel="canonical" href="https://saad-portfolio-saad-4985.vercel.app/projects.html">
+    <meta name="theme-color" content="#05070a">
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Link preview (Open Graph / Twitter) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Saad Azfar">
+    <meta property="og:title" content="Projects | Saad Azfar">
+    <meta property="og:description" content="Projects by Saad Azfar: line following, sumo and racing robots, a DIY generator, 3D printing, design thinking research and more.">
+    <meta property="og:url" content="https://saad-portfolio-saad-4985.vercel.app/projects.html">
+    <meta property="og:image" content="https://saad-portfolio-saad-4985.vercel.app/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Saad Azfar, student at GUTECH and app developer">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects | Saad Azfar">
+    <meta name="twitter:description" content="Projects by Saad Azfar: line following, sumo and racing robots, a DIY generator, 3D printing, design thinking research and more.">
+    <meta name="twitter:image" content="https://saad-portfolio-saad-4985.vercel.app/og-image.png">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-projects">
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">&lt;saad<span>/&gt;</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#about"><span class="idx">01</span>about</a></li>
+                <li><a href="index.html#skills"><span class="idx">02</span>skills</a></li>
+                <li><a href="index.html#experience"><span class="idx">03</span>experience</a></li>
+                <li><a href="index.html#education"><span class="idx">04</span>education</a></li>
+                <li><a href="index.html#contact"><span class="idx">05</span>contact</a></li>
+                <li><a href="projects.html" class="active" aria-current="page">projects <i class="fas fa-arrow-up-right-from-square nav-ext"></i></a></li>
+                <li><a href="gallery.html">gallery <i class="fas fa-arrow-up-right-from-square nav-ext"></i></a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header container">
+            <a href="index.html" class="back-link reveal"><i class="fas fa-arrow-left"></i> Back to portfolio</a>
+            <h1 class="section-title reveal">Projects</h1>
+            <p class="page-intro reveal">Robots, 3D printing, research and creative work. Click photos in the galleries to view them larger.</p>
+        </section>
+
+        <section id="projects" class="section container projects-page">
+                <div class="projects-grid">
+                    <div class="project-card project-featured card reveal">
+                        <figure class="project-photo">
+                            <img src="line-follower-1.webp" alt="Blue-chassis line following robot with an Arduino, L298 motor driver module and front-mounted sensor array" loading="lazy">
+                        </figure>
+                        <div class="project-content">
+                            <span class="project-num">PRJ_01 // COMPETITION ROBOT</span>
+                            <h3>Line Following Robot</h3>
+                            <p>An autonomous line following robot of the kind used in robotics competitions such as Robotron and Edvon. A front-mounted sensor array reads the track, an Arduino processes the readings, and an L298 motor driver module steers the drive wheels to keep the robot locked onto the line.</p>
+                            <ul class="project-points">
+                                <li>Arduino-based control with a stacked shield for clean wiring</li>
+                                <li>L298 module with heatsink driving the left and right motors</li>
+                                <li>Compact blue chassis with a front-mounted sensor bar and ribbon-cable wiring</li>
+                            </ul>
+                            <div class="project-stack">
+                                <span class="stack-tag">Arduino</span>
+                                <span class="stack-tag">L298 Motor Driver</span>
+                                <span class="stack-tag">Line Sensors</span>
+                                <span class="stack-tag">C++</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="outcome"><strong>Use:</strong> Competition-style robot, as seen at events like Robotron and Edvon.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card card reveal">
+                        <figure class="project-thumb">
+                            <img src="robo-sumo.webp" alt="Black robo sumo bot with green wheels, a front wedge, two motor driver boards and an Arduino Uno" style="object-position: 50% 42%" loading="lazy">
+                        </figure>
+                        <div class="project-content">
+                            <span class="project-num">PRJ_02 // COMPETITION ROBOT</span>
+                            <h3>Robo Sumo Bot</h3>
+                            <p>A compact, heavy sumo robot of the kind used in robotics competitions such as Robotron and Edvon, built to push opponents out of the ring. A black body with a low front wedge, grippy green wheels, two high-current motor driver boards and an Arduino Uno as the brain.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">Arduino Uno</span>
+                                <span class="stack-tag">IBT-2 Motor Drivers</span>
+                                <span class="stack-tag">Buck Converter</span>
+                                <span class="stack-tag">Fabrication</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="outcome"><strong>Build:</strong> Custom chassis with a front scoop wedge and rubber-gripped wheels.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card card reveal">
+                        <figure class="project-thumb">
+                            <img src="robo-race.webp" alt="Four-wheel Arduino robot car on a clear acrylic chassis with yellow geared motors and an L298 driver" style="object-position: 50% 48%" loading="lazy">
+                        </figure>
+                        <div class="project-content">
+                            <span class="project-num">PRJ_03 // COMPETITION ROBOT</span>
+                            <h3>Robo Race Car</h3>
+                            <p>A four-wheel-drive racing robot of the kind used in robotics competitions such as Robotron and Edvon, on a clear acrylic chassis. Four yellow geared motors are driven through an L298 module and controlled by an Arduino Uno, tuned for speed and straight-line stability.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">Arduino Uno</span>
+                                <span class="stack-tag">L298 Module</span>
+                                <span class="stack-tag">4WD Chassis</span>
+                                <span class="stack-tag">C++</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="outcome"><strong>Build:</strong> Four independently powered wheels on a lightweight acrylic frame.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card card reveal">
+                        <figure class="project-thumb">
+                            <img src="generator.webp" alt="Homemade generator made from a white container with coils of copper wire wound on nails and paper-roll arms" style="object-position: 50% 42%" loading="lazy">
+                        </figure>
+                        <div class="project-content">
+                            <span class="project-num">PRJ_04</span>
+                            <h3>DIY Generator</h3>
+                            <p>A hand-built electric generator made from nails and copper wire coils arranged around a central rotor body, built to understand electromagnetic induction by making it from scratch.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">Copper Wire Coils</span>
+                                <span class="stack-tag">Electromagnetism</span>
+                                <span class="stack-tag">Hands-on Prototyping</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="outcome"><strong>Concept:</strong> Turning motion into electricity using wound coils.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card project-featured has-gallery card reveal">
+                        <div class="project-gallery">
+                            <figure><img src="3d-printer.webp" alt="Bambu Lab A1 3D printer with a green filament spool" style="object-position: 40% 55%" loading="lazy"></figure>
+                            <figure><img src="3d-parts.webp" alt="Collection of 3D printed parts in grey, yellow and red including a yellow nameplate" style="object-position: 50% 62%" loading="lazy"></figure>
+                            <figure><img src="3d-cube.webp" alt="Red 3D printed cube with a raised letter R held in a hand" style="object-position: 50% 38%" loading="lazy"></figure>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-num">PRJ_05 // MAKER LAB</span>
+                            <h3>3D Design &amp; Printing</h3>
+                            <p>Learned to design my own parts in Tinkercad and bring them to life on a Bambu Lab A1 3D printer, from the first digital sketch to a finished physical print.</p>
+                            <ul class="project-points">
+                                <li>Modelled projects from scratch in Tinkercad</li>
+                                <li>Operated a multi-spool Bambu Lab A1 printer with colour switching</li>
+                                <li>Printed enclosures, brackets, a custom nameplate and a lettered cube</li>
+                            </ul>
+                            <div class="project-stack">
+                                <span class="stack-tag">Tinkercad</span>
+                                <span class="stack-tag">3D Printing</span>
+                                <span class="stack-tag">Bambu Lab A1</span>
+                                <span class="stack-tag">CAD Design</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="outcome"><strong>Outcome:</strong> Can take an idea from a Tinkercad model to a finished print.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card project-featured has-gallery card reveal">
+                        <div class="project-gallery wide-first">
+                            <figure data-caption="Affinity diagram with POV and HMW statements"><img src="design-thinking-board.webp" alt="Red chart paper with sticky notes grouped into Registration and Payment Bottlenecks and Infrastructure and Unhygienic Conditions, with point of view and how might we statements written below" loading="lazy"></figure>
+                            <figure data-caption="Sticky-note clusters on the chart"><img src="design-thinking-1.webp" alt="Sticky notes arranged in clusters on red chart paper on the floor beside a second white chart" style="object-position: 50% 45%" loading="lazy"></figure>
+                            <figure data-caption="Sorting notes together as a team"><img src="design-thinking-2.webp" alt="Team member sorting sticky notes on two charts laid out on the floor during the affinity diagram session" style="object-position: 50% 40%" loading="lazy"></figure>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-num">PRJ_06 // DESIGN THINKING</span>
+                            <h3>Affinity Diagram: Hospital Emergency Room Study</h3>
+                            <p>A design thinking project where my team grouped our observations of a public hospital emergency room into themes with an affinity diagram, then turned them into clear problem statements.</p>
+                            <ul class="project-points">
+                                <li>Sorted sticky-note observations into two clusters: Registration &amp; Payment Bottlenecks, and Infrastructure &amp; Unhygienic Conditions</li>
+                                <li>Wrote Point-of-View statements for a low-income daily wage earner and a stressed patient attendant</li>
+                                <li>Framed How-Might-We questions, such as combining token generation and payment into a single counter</li>
+                            </ul>
+                            <div class="project-stack">
+                                <span class="stack-tag">Design Thinking</span>
+                                <span class="stack-tag">Affinity Diagram</span>
+                                <span class="stack-tag">POV &amp; HMW</span>
+                                <span class="stack-tag">User Research</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="outcome"><strong>Outcome:</strong> Turned scattered observations into focused problems worth solving.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card card reveal">
+                        <div class="project-content">
+                            <span class="project-num">PRJ_07</span>
+                            <h3>AI Assistant for Deaf Community</h3>
+                            <p>Designed and developed a machine learning model to bridge communication gaps for deaf individuals, interpreting gestures or visual inputs into actionable data.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">Python</span>
+                                <span class="stack-tag">Machine Learning</span>
+                                <span class="stack-tag">Computer Vision</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="outcome"><strong>Outcome:</strong> Successfully demonstrated applied AI in assistive technology.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card card reveal">
+                        <div class="project-content">
+                            <span class="project-num">PRJ_08</span>
+                            <h3>Automatic Water Level Sensing Machine</h3>
+                            <p>Engineered an automated hardware solution using Arduino and ultrasonic/fluid sensors to monitor and control water levels dynamically.</p>
+                            <button type="button" class="video-embed" data-video-id="O_1HE_wIBL8" data-title="Automatic Water Level Sensing Machine demo video" aria-label="Play demo video: Automatic Water Level Sensing Machine">
+                                <img src="https://i.ytimg.com/vi/O_1HE_wIBL8/hqdefault.jpg" alt="" loading="lazy">
+                                <span class="video-play" aria-hidden="true"></span>
+                                <span class="video-caption">Watch the early prototype test</span>
+                            </button>
+                            <div class="project-stack">
+                                <span class="stack-tag">Arduino</span>
+                                <span class="stack-tag">C++</span>
+                                <span class="stack-tag">Sensors &amp; Relays</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="outcome"><strong>Outcome:</strong> Prevented water overflow and automated pump control.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card card reveal">
+                        <div class="project-content">
+                            <span class="project-num">PRJ_09</span>
+                            <h3>WordPress Web Solutions &amp; Media</h3>
+                            <p>Developed custom WordPress websites integrated with tailored digital media, custom photography, and promotional video content.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">WordPress</span>
+                                <span class="stack-tag">Adobe Photoshop</span>
+                                <span class="stack-tag">Video Editing</span>
+                            </div>
+                            <div class="project-links">
+                                <span class="outcome"><strong>Outcome:</strong> Delivered cohesive digital brand experiences.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="index.html" class="logo">&lt;saad<span>/&gt;</span></a>
+                    <p>Building web apps, hardware systems, and creative media.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/Phoenix191001" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/saad-azfar-59b625179/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://discord.com/users/mistersaad" target="_blank" rel="noopener" title="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="mailto:invinciblegaming2048@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Saad Azfar. All rights reserved.</p>
+                <button type="button" class="owner-link" id="owner-link" aria-label="Owner login"><i class="fas fa-lock"></i> Owner</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="content.js"></script>
+</body>
+</html>

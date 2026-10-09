@@ -3,7 +3,7 @@
 Click **Owner** at the bottom of any page and paste a GitHub token. After that you will see:
 
 - **+ Add photo** on the Gallery page (a photo and a short title)
-- **+ Add project** in the Projects section (title, description, optional tags, link and photo)
+- **+ Add project** on the Projects page (title, description, optional tags, link and photo)
 - a small **x** on anything you added, to remove it
 
 Saving commits to this repo, and Vercel rebuilds the site. It is live for everyone in about a minute.
