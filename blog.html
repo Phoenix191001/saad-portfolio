@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Saad Azfar</title>
+    <meta name="description" content="Articles by Saad Azfar on robotics, web apps, 3D printing and creative media.">
+    <link rel="canonical" href="https://saad-portfolio-saad-4985.vercel.app/blog">
+    <meta name="theme-color" content="#05070a">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Saad Azfar">
+    <meta property="og:title" content="Blog | Saad Azfar">
+    <meta property="og:description" content="Articles by Saad Azfar on robotics, web apps, 3D printing and creative media.">
+    <meta property="og:url" content="https://saad-portfolio-saad-4985.vercel.app/blog">
+    <meta property="og:image" content="https://saad-portfolio-saad-4985.vercel.app/og-image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blog | Saad Azfar">
+    <meta name="twitter:description" content="Articles by Saad Azfar on robotics, web apps, 3D printing and creative media.">
+    <meta name="twitter:image" content="https://saad-portfolio-saad-4985.vercel.app/og-image.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/assets/prose.css">
+    <link rel="stylesheet" href="/assets/blog.css">
+</head>
+<body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">&lt;saad<span>/&gt;</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/#about"><span class="idx">01</span>about</a></li>
+                <li><a href="/#skills"><span class="idx">02</span>skills</a></li>
+                <li><a href="/#experience"><span class="idx">03</span>experience</a></li>
+                <li><a href="/#education"><span class="idx">04</span>education</a></li>
+                <li><a href="/#certificates"><span class="idx">05</span>certificates</a></li>
+                <li><a href="/#contact"><span class="idx">06</span>contact</a></li>
+                <li><a href="/projects.html">projects <i class="fas fa-arrow-up-right-from-square nav-ext"></i></a></li>
+                <li><a href="/gallery.html">gallery <i class="fas fa-arrow-up-right-from-square nav-ext"></i></a></li>
+                <li><a href="/blog" class="active" aria-current="page">blog <i class="fas fa-arrow-up-right-from-square nav-ext"></i></a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header container">
+            <a href="/" class="back-link"><i class="fas fa-arrow-left"></i> Back to portfolio</a>
+            <h1 class="section-title">Blog</h1>
+            <p class="page-intro">Notes and write-ups on things I build and learn.</p>
+        </section>
+
+        <section class="section container blog-section">
+            <div class="blog-controls">
+                <label class="sr-only" for="blog-search">Search posts</label>
+                <input id="blog-search" type="search" placeholder="Search posts..." autocomplete="off">
+                <div class="tag-filter" id="tag-filter" role="group" aria-label="Filter by tag"></div>
+            </div>
+            <p class="blog-status" id="blog-status" role="status">Loading posts...</p>
+            <div class="post-grid" id="post-grid"></div>
+            <div class="blog-more"><button type="button" class="btn btn-outline" id="load-more" hidden>Load more</button></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <a href="/" class="logo">&lt;saad<span>/&gt;</span></a>
+                    <p>Building web apps, hardware systems, and creative media.</p>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/Phoenix191001" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/saad-azfar-59b625179/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://discord.com/users/mistersaad" target="_blank" rel="noopener" title="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="mailto:invinciblegaming2048@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Saad Azfar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+    <script type="module" src="/assets/blog.js"></script>
+</body>
+</html>

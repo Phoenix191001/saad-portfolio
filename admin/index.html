@@ -4,23 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow">
-  <title>Admin</title>
+  <title>Admin | Posts</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/admin/admin.css">
 </head>
 <body>
-  <div class="container" style="padding-top:60px;position:relative;z-index:1">
-    <h1>Dashboard</h1>
-    <p id="who" style="color:var(--text-muted);margin:8px 0 24px">Checking sign-in…</p>
-    <p>Login works. The post list and editor come next.</p>
-    <button id="logout" class="btn btn-outline" style="margin-top:24px;cursor:pointer">Log out</button>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="adm">
+    <header class="adm-top">
+      <div class="inner">
+        <a href="/admin" class="logo">&lt;admin<span>/&gt;</span></a>
+        <span class="adm-muted" id="who"></span>
+        <a class="btn-sm" href="/blog" target="_blank" rel="noopener">View blog</a>
+        <button class="btn-sm" id="logout" type="button">Log out</button>
+      </div>
+    </header>
+    <main class="adm-wrap">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <h1>Posts</h1>
+        <a class="btn-sm primary" href="/admin/editor">+ New post</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><b id="n-all">0</b>Total</div>
+        <div class="stat"><b id="n-pub">0</b>Published</div>
+        <div class="stat"><b id="n-draft">0</b>Drafts</div>
+      </div>
+      <div class="filters">
+        <input id="q" type="search" placeholder="Search posts..." aria-label="Search posts">
+        <select id="f" aria-label="Filter by status">
+          <option value="">All</option>
+          <option value="published">Published</option>
+          <option value="draft">Drafts</option>
+        </select>
+      </div>
+      <div class="post-list" id="list" aria-live="polite"><div class="empty">Loading...</div></div>
+    </main>
   </div>
-  <script type="module">
-    import { requireAdmin, logout } from "/assets/admin/guard.js";
-    const user = await requireAdmin();
-    document.getElementById("who").textContent = "Signed in as " + user.email;
-    document.getElementById("logout").addEventListener("click", logout);
-  </script>
+  <script type="module" src="/assets/admin/dashboard.js"></script>
 </body>
 </html>
