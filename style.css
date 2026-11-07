@@ -933,3 +933,58 @@ img { max-width: 100%; display: block; }
 .cert-body .card-link { margin-top: 8px; font-size: 0.82rem; }
 @media (max-width: 992px) { .cert-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .cert-grid { grid-template-columns: 1fr; } }
+
+/* Left sidebar navigation (wide screens). Below 1241px the top bar with the menu button is used. */
+@media (min-width: 1241px) {
+    :root { --sidebar-width: 232px; }
+    body:has(.navbar) { padding-left: var(--sidebar-width); }
+    body:has(.navbar) .container { padding-left: 44px; padding-right: 44px; }
+    body:has(.navbar) .navbar .container { padding-left: 18px; padding-right: 18px; }
+
+    .navbar,
+    .navbar.scrolled {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: var(--sidebar-width);
+        height: 100vh;
+        padding: 28px 0;
+        background: var(--nav-bg);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-right: 1px solid var(--border);
+        border-bottom: 0;
+        overflow-y: auto;
+    }
+
+    .navbar .container {
+        height: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0 18px;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 28px;
+    }
+
+    .logo { padding: 0 12px; font-size: 1.3rem; }
+
+    .nav-links { flex-direction: column; gap: 2px; }
+    .nav-links li { display: block; }
+    .nav-links a {
+        padding: 10px 12px;
+        font-size: 0.85rem;
+        border-left: 2px solid transparent;
+        border-radius: var(--radius);
+    }
+    .nav-links a:hover { background: var(--accent-soft); }
+    .nav-links a.active {
+        color: var(--accent-color);
+        background: var(--accent-soft);
+        border-left-color: var(--accent-color);
+    }
+    .nav-links a .nav-ext { margin-left: auto; }
+
+    .nav-actions { margin: auto 0 0; padding: 0 12px; justify-content: flex-start; }
+}
