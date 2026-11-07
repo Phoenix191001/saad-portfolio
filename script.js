@@ -169,7 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
     document.querySelectorAll('.gallery-item, .project-gallery figure, .cert-card figure').forEach(wireGalleryItem);
-    window.PortfolioUI = { wireGalleryItem };
 
     lightbox.querySelector('.lb-close').addEventListener('click', () => lightbox.close());
     lightbox.querySelector('.lb-prev').addEventListener('click', () => showPhoto(lbIndex - 1));
