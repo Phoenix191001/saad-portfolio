@@ -169,7 +169,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
     document.querySelectorAll('.gallery-item, .project-gallery figure, .cert-card figure').forEach(wireGalleryItem);
-    window.PortfolioUI = { wireGalleryItem };
 
     lightbox.querySelector('.lb-close').addEventListener('click', () => lightbox.close());
     lightbox.querySelector('.lb-prev').addEventListener('click', () => showPhoto(lbIndex - 1));
@@ -209,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.key === 'Escape') setMenu(false);
         });
         window.addEventListener('resize', () => {
-            if (window.innerWidth > 1060) setMenu(false);
+            if (window.innerWidth > 1240) setMenu(false);
         });
     }
 });

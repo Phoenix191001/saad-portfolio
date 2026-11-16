@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin | Editor</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/prose.css">
+  <link rel="stylesheet" href="/assets/blog.css">
+  <link rel="stylesheet" href="/assets/admin/admin.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="adm">
+    <header class="adm-top">
+      <div class="inner">
+        <a href="/admin" class="btn-sm">&larr; Posts</a>
+        <span class="save-state" id="save-state">New post</span>
+        <span style="margin-right:auto"></span>
+        <button class="btn-sm" id="btn-preview" type="button">Preview</button>
+        <button class="btn-sm" id="btn-draft" type="button">Save draft</button>
+        <button class="btn-sm" id="btn-unpublish" type="button" hidden>Unpublish</button>
+        <button class="btn-sm primary" id="btn-publish" type="button">Publish</button>
+      </div>
+    </header>
+
+    <div class="ed-layout">
+      <main class="ed-main">
+        <div id="cover-box" class="cover-box" tabindex="0" role="button" aria-label="Add cover photo">
+          <div id="cover-empty"><i class="fas fa-image"></i><br><b>Add a cover photo</b><br><span class="adm-muted">Click or drop an image (JPG, PNG, WebP, max 8 MB)</span></div>
+          <img id="cover-img" alt="" hidden>
+        </div>
+        <div class="progress" id="cover-progress" hidden><i></i></div>
+        <div class="cover-actions" id="cover-actions" hidden>
+          <input class="field" id="cover-alt" placeholder="Describe the image (alt text)" aria-label="Cover alt text">
+          <button class="btn-sm" id="cover-replace" type="button">Replace</button>
+          <button class="btn-sm danger" id="cover-remove" type="button">Remove</button>
+        </div>
+        <input type="file" id="cover-file" accept="image/jpeg,image/png,image/webp,image/gif,image/avif" hidden>
+        <input type="file" id="inline-file" accept="image/jpeg,image/png,image/webp,image/gif,image/avif" hidden>
+
+        <input class="title-input" id="title" placeholder="Post title" maxlength="140" aria-label="Post title">
+
+        <div class="toolbar" id="toolbar" role="toolbar" aria-label="Formatting">
+          <button class="tb" data-cmd="undo" title="Undo (Ctrl+Z)"><i class="fas fa-rotate-left"></i></button>
+          <button class="tb" data-cmd="redo" title="Redo (Ctrl+Y)"><i class="fas fa-rotate-right"></i></button>
+          <span class="sep"></span>
+          <select id="block-type" aria-label="Text style">
+            <option value="p">Paragraph</option>
+            <option value="1">Heading 1</option>
+            <option value="2">Heading 2</option>
+            <option value="3">Heading 3</option>
+            <option value="4">Heading 4</option>
+          </select>
+          <span class="sep"></span>
+          <button class="tb" data-cmd="bold" title="Bold (Ctrl+B)"><i class="fas fa-bold"></i></button>
+          <button class="tb" data-cmd="italic" title="Italic (Ctrl+I)"><i class="fas fa-italic"></i></button>
+          <button class="tb" data-cmd="underline" title="Underline (Ctrl+U)"><i class="fas fa-underline"></i></button>
+          <button class="tb" data-cmd="strike" title="Strikethrough"><i class="fas fa-strikethrough"></i></button>
+          <button class="tb" data-cmd="code" title="Inline code"><i class="fas fa-code"></i></button>
+          <button class="tb" data-cmd="highlight" title="Highlight"><i class="fas fa-highlighter"></i></button>
+          <input type="color" id="text-color" value="#00a36a" title="Text colour" aria-label="Text colour">
+          <button class="tb" data-cmd="clearColor" title="Reset colour"><i class="fas fa-droplet-slash"></i></button>
+          <span class="sep"></span>
+          <button class="tb" data-cmd="bulletList" title="Bullet list"><i class="fas fa-list-ul"></i></button>
+          <button class="tb" data-cmd="orderedList" title="Numbered list"><i class="fas fa-list-ol"></i></button>
+          <button class="tb" data-cmd="taskList" title="Task list"><i class="fas fa-square-check"></i></button>
+          <button class="tb" data-cmd="blockquote" title="Quote"><i class="fas fa-quote-left"></i></button>
+          <button class="tb" data-cmd="codeBlock" title="Code block"><i class="fas fa-terminal"></i></button>
+          <button class="tb" data-cmd="hr" title="Divider"><i class="fas fa-minus"></i></button>
+          <span class="sep"></span>
+          <button class="tb" data-cmd="alignLeft" title="Align left"><i class="fas fa-align-left"></i></button>
+          <button class="tb" data-cmd="alignCenter" title="Align centre"><i class="fas fa-align-center"></i></button>
+          <button class="tb" data-cmd="alignRight" title="Align right"><i class="fas fa-align-right"></i></button>
+          <span class="sep"></span>
+          <button class="tb" data-cmd="link" title="Link"><i class="fas fa-link"></i></button>
+          <button class="tb" data-cmd="image" title="Insert image"><i class="fas fa-image"></i></button>
+          <button class="tb" data-cmd="youtube" title="Embed YouTube video"><i class="fab fa-youtube"></i></button>
+          <button class="tb" data-cmd="table" title="Insert table"><i class="fas fa-table"></i></button>
+          <span class="table-tools" id="table-tools">
+            <span class="sep"></span>
+            <button class="tb" data-cmd="rowAfter" title="Add row below">+Row</button>
+            <button class="tb" data-cmd="colAfter" title="Add column right">+Col</button>
+            <button class="tb" data-cmd="delRow" title="Delete row">-Row</button>
+            <button class="tb" data-cmd="delCol" title="Delete column">-Col</button>
+            <button class="tb" data-cmd="delTable" title="Delete table"><i class="fas fa-trash"></i></button>
+          </span>
+          <span class="sep"></span>
+          <button class="tb" data-cmd="clear" title="Clear formatting"><i class="fas fa-eraser"></i></button>
+        </div>
+        <div class="ed-surface prose" id="editor"></div>
+        <div class="ed-foot"><span id="count">0 words</span><span id="read-time">1 min read</span></div>
+      </main>
+
+      <aside class="ed-side" aria-label="Post settings">
+        <label for="slug">URL slug</label>
+        <input class="field" id="slug" maxlength="80" placeholder="auto-from-title">
+        <div class="hint" id="slug-hint">/blog/your-slug</div>
+        <label for="excerpt">Excerpt (shown on cards)</label>
+        <textarea class="field" id="excerpt" rows="3" maxlength="300"></textarea>
+        <label for="tags">Tags (comma separated)</label>
+        <input class="field" id="tags" placeholder="robotics, arduino">
+        <label for="pubdate">Publish date (optional)</label>
+        <input class="field" id="pubdate" type="datetime-local">
+        <div class="hint">Leave empty to use the moment you publish.</div>
+        <label for="seo-title">SEO title (optional)</label>
+        <input class="field" id="seo-title" maxlength="70">
+        <label for="seo-desc">SEO description (optional)</label>
+        <textarea class="field" id="seo-desc" rows="3" maxlength="170"></textarea>
+        <div class="hint" id="status-line"></div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="slash" id="slash" hidden></div>
+  <div class="preview" id="preview" hidden>
+    <button class="btn-sm close" id="preview-close" type="button">Close preview</button>
+    <article class="post container">
+      <div class="post-tags" id="pv-tags"></div>
+      <header class="post-header"><h1 id="pv-title"></h1><p class="post-meta" id="pv-meta"></p></header>
+      <figure class="post-cover" id="pv-cover" hidden><img id="pv-cover-img" alt=""></figure>
+      <div class="prose" id="pv-body"></div>
+    </article>
+  </div>
+
+  <script type="module" src="/assets/admin/editor.js"></script>
+</body>
+</html>
