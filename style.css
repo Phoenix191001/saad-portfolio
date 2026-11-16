@@ -1007,3 +1007,7 @@ img { max-width: 100%; display: block; }
   .shot-strip { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
   .shot-strip figure { flex: 0 0 min(82vw, 420px); scroll-snap-align: start; }
 }
+
+.shot-strip.four { grid-template-columns: repeat(4, 1fr); }
+.shot-strip.four figure { aspect-ratio: 16 / 11; }
+@media (max-width: 992px) { .shot-strip.four figure { flex: 0 0 min(82vw, 420px); } }

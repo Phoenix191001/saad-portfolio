@@ -124,7 +124,13 @@
         "Vercel"
       ],
       "repo": "https://github.com/Phoenix191001/GUTECH-LMS-PORTAL",
-      "liveUrl": "https://gutech-lms-portal-tau.vercel.app"
+      "liveUrl": "https://gutech-lms-portal-tau.vercel.app",
+      "images": [
+        "lms-login.webp",
+        "lms-dashboard.webp",
+        "lms-courses.webp",
+        "lms-assignments.webp"
+      ]
     },
     {
       "title": "Sukoon: Digital Well-Being App",
