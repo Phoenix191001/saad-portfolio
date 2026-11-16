@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         item.setAttribute('role', 'button');
         item.setAttribute('aria-label', 'View larger: ' + (cap ? cap.textContent : (item.dataset.caption || item.querySelector('img').alt || 'photo')));
         const open = () => {
-            const group = item.closest('.gallery-grid, .project-gallery, .cert-grid, .phone-strip');
+            const group = item.closest('.gallery-grid, .project-gallery, .cert-grid, .phone-strip, .shot-strip');
             lbItems = Array.from(group.querySelectorAll('.gallery-item, figure'));
             showPhoto(lbItems.indexOf(item));
             if (typeof lightbox.showModal === 'function') lightbox.showModal();
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
         });
     };
-    document.querySelectorAll('.gallery-item, .project-gallery figure, .cert-card figure, .phone-strip figure').forEach(wireGalleryItem);
+    document.querySelectorAll('.gallery-item, .project-gallery figure, .cert-card figure, .phone-strip figure, .shot-strip figure').forEach(wireGalleryItem);
 
     lightbox.querySelector('.lb-close').addEventListener('click', () => lightbox.close());
     lightbox.querySelector('.lb-prev').addEventListener('click', () => showPhoto(lbIndex - 1));

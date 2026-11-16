@@ -169,7 +169,12 @@
         "Vercel"
       ],
       "repo": "https://github.com/Phoenix191001/Pharmacy-and-Doctor-Connection",
-      "liveUrl": "https://pharmacy-and-doctor-connection.vercel.app"
+      "liveUrl": "https://pharmacy-and-doctor-connection.vercel.app",
+      "images": [
+        "kihd-login.webp",
+        "kihd-doctor.webp",
+        "kihd-pharmacy.webp"
+      ]
     },
     {
       "title": "Calculator and Periodic Table",
