@@ -106,6 +106,78 @@
   ],
   "projects": [
     {
+      "title": "GUTECH Portal: Learning Management System",
+      "description": "Student and faculty portal with admin, teacher and student roles (closed system, accounts created by an administrator).",
+      "highlights": [
+        "Courses, resources, assignments and timed quizzes with server-side scoring",
+        "Gradebook with CSV export and bulk CSV import of users",
+        "Announcements, complaints and realtime course chat",
+        "Row Level Security on every table"
+      ],
+      "stack": [
+        "Next.js 16",
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS v4",
+        "Supabase",
+        "PostgreSQL",
+        "Vercel"
+      ],
+      "repo": "https://github.com/Phoenix191001/GUTECH-LMS-PORTAL",
+      "liveUrl": "https://gutech-lms-portal-tau.vercel.app"
+    },
+    {
+      "title": "Pause: Digital Well-Being App",
+      "description": "Private, mobile-first well-being PWA for university students, built for a Digital Well-Being and Mental Health midterm.",
+      "highlights": [
+        "Pause check-in, focus sessions and night wind-down",
+        "Pomodoro, weekly goals, spaced-repetition flashcards and focus garden",
+        "Optional accounts with sync, anonymous moderated community, push reminders"
+      ],
+      "stack": [
+        "HTML/CSS/JavaScript",
+        "PWA",
+        "Vercel Functions",
+        "Supabase",
+        "Web Push"
+      ],
+      "repo": "https://github.com/Phoenix191001/Digital-Wellbeing-App",
+      "liveUrl": "https://pause-gamma.vercel.app",
+      "images": [
+        "pause-home.webp",
+        "pause-study.webp"
+      ]
+    },
+    {
+      "title": "Doctor and Pharmacy Linked Web App",
+      "description": "Design thinking prototype for the Karachi Institute of Heart Diseases: a doctor console and a pharmacy/lab app linked through one Supabase database.",
+      "highlights": [
+        "Prescriptions appear in the pharmacy queue within seconds; dispensing deducts stock atomically",
+        "Dose builder calculates the quantity",
+        "Same-formula alternatives search",
+        "Role-based logins"
+      ],
+      "stack": [
+        "Node.js",
+        "Serverless API",
+        "Supabase",
+        "PostgreSQL",
+        "JavaScript",
+        "Vercel"
+      ],
+      "repo": "https://github.com/Phoenix191001/Pharmacy-and-Doctor-Connection"
+    },
+    {
+      "title": "Calculator and Periodic Table",
+      "description": "A basic calculator and a periodic table of the elements.",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "repo": "https://github.com/Phoenix191001/calculator-and-periodic-table"
+    },
+    {
       "title": "Line Following Robot",
       "description": "Autonomous line following robot of the kind used in robotics competitions such as Robotron and Edvon, using an Arduino, an L298 motor driver module and a front-mounted line sensor array.",
       "outcome": "Competition-style robot, as seen at events like Robotron and Edvon.",

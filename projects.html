@@ -73,12 +73,107 @@
 
         <section id="projects" class="section container projects-page">
                 <div class="projects-grid">
+                    <div class="project-card project-wide card reveal">
+                        <div class="project-content">
+                            <span class="project-num">PRJ_01 // WEB APP</span>
+                            <h3>GUTECH Portal: Learning Management System</h3>
+                            <p>A student and faculty portal with three roles (admin, teacher, student). It is a closed system, so accounts are created by an administrator. Built full-stack and deployed on Vercel with a Supabase backend.</p>
+                            <ul class="project-points">
+                                <li>Courses, resources, assignments and timed quizzes with server-side scoring</li>
+                                <li>Gradebook with CSV export, plus bulk CSV import of users</li>
+                                <li>Announcements, complaints and realtime course chat</li>
+                                <li>Row Level Security on every table. Deadlines and quiz timers use the database clock</li>
+                                <li>Role-based route protection, password reset by email and login rate limiting</li>
+                            </ul>
+                            <div class="project-stack">
+                                <span class="stack-tag">Next.js 16</span>
+                                <span class="stack-tag">React 19</span>
+                                <span class="stack-tag">TypeScript</span>
+                                <span class="stack-tag">Tailwind CSS v4</span>
+                                <span class="stack-tag">Supabase</span>
+                                <span class="stack-tag">PostgreSQL</span>
+                                <span class="stack-tag">Vercel</span>
+                            </div>
+                            <div class="project-actions">
+                                <a class="btn btn-primary btn-sm" href="https://gutech-lms-portal-tau.vercel.app" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Live site</a>
+                                <a class="btn btn-outline btn-sm" href="https://github.com/Phoenix191001/GUTECH-LMS-PORTAL" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card project-featured has-gallery card reveal">
+                        <div class="project-gallery two">
+                            <figure data-caption="Pause: home check-in screen"><img src="pause-home.webp" alt="Pause app home screen asking what you came to do, with options such as Study, Message someone and Relax" style="object-position: 50% 0%" loading="lazy"></figure>
+                            <figure data-caption="Pause: Study tab with Pomodoro, flashcards, goals and focus garden"><img src="pause-study.webp" alt="Pause app Study tab with Pomodoro, Flashcards, Goals and Garden tiles and weekly study goals" style="object-position: 50% 0%" loading="lazy"></figure>
+                        </div>
+                        <div class="project-content">
+                            <span class="project-num">PRJ_02 // WEB APP (PWA)</span>
+                            <h3>Pause: Digital Well-Being App</h3>
+                            <p>A private, mobile-first well-being web app for university students, built for a Digital Well-Being and Mental Health midterm. It installs like an app and keeps working offline.</p>
+                            <ul class="project-points">
+                                <li>Pause check-in, focus sessions and a night wind-down flow</li>
+                                <li>Study tab: Pomodoro, weekly goals, spaced-repetition flashcards and a focus garden that never wilts</li>
+                                <li>Optional accounts with cross-device sync. Mood notes stay private unless the student opts in</li>
+                                <li>Anonymous, moderated community circles, plus push-notification reminders</li>
+                                <li>Automated tests for the API, accounts, reminders and browser flows</li>
+                            </ul>
+                            <div class="project-stack">
+                                <span class="stack-tag">HTML / CSS / JavaScript</span>
+                                <span class="stack-tag">PWA</span>
+                                <span class="stack-tag">Vercel Functions</span>
+                                <span class="stack-tag">Supabase</span>
+                                <span class="stack-tag">Web Push</span>
+                            </div>
+                            <div class="project-actions">
+                                <a class="btn btn-primary btn-sm" href="https://pause-gamma.vercel.app" target="_blank" rel="noopener"><i class="fas fa-arrow-up-right-from-square"></i> Live site</a>
+                                <a class="btn btn-outline btn-sm" href="https://github.com/Phoenix191001/Digital-Wellbeing-App" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card project-wide card reveal">
+                        <div class="project-content">
+                            <span class="project-num">PRJ_03 // WEB APP</span>
+                            <h3>Doctor and Pharmacy Linked Web App</h3>
+                            <p>A design thinking prototype for the Karachi Institute of Heart Diseases. A doctor console and a pharmacy/lab app share one Supabase database, so a prescription sent by a doctor shows up in the pharmacy queue within seconds.</p>
+                            <ul class="project-points">
+                                <li>Dispensing deducts stock atomically, and the doctor sees the prescription marked Dispensed</li>
+                                <li>Dose builder: dose, times a day and days calculate the quantity automatically</li>
+                                <li>Alternatives search lists other brands with the same formula, flagged same or different strength</li>
+                                <li>Role-based logins: a doctor sees only their own prescriptions, pharmacy sees all</li>
+                            </ul>
+                            <div class="project-stack">
+                                <span class="stack-tag">Node.js</span>
+                                <span class="stack-tag">Serverless API</span>
+                                <span class="stack-tag">Supabase</span>
+                                <span class="stack-tag">PostgreSQL</span>
+                                <span class="stack-tag">JavaScript</span>
+                                <span class="stack-tag">Vercel</span>
+                            </div>
+                            <div class="project-actions">
+                                <a class="btn btn-outline btn-sm" href="https://github.com/Phoenix191001/Pharmacy-and-Doctor-Connection" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub repo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card project-wide card reveal">
+                        <div class="project-content">
+                            <span class="project-num">PRJ_04 // WEB BASICS</span>
+                            <h3>Calculator and Periodic Table</h3>
+                            <p>Two small front-end projects: a basic calculator, and a periodic table of the elements from Hydrogen to Oganesson.</p>
+                            <div class="project-stack">
+                                <span class="stack-tag">HTML</span>
+                                <span class="stack-tag">CSS</span>
+                                <span class="stack-tag">JavaScript</span>
+                            </div>
+                            <div class="project-actions">
+                                <a class="btn btn-outline btn-sm" href="https://github.com/Phoenix191001/calculator-and-periodic-table" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub repo</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="project-card project-featured card reveal">
                         <figure class="project-photo">
                             <img src="line-follower-1.webp" alt="Blue-chassis line following robot with an Arduino, L298 motor driver module and front-mounted sensor array" loading="lazy">
                         </figure>
                         <div class="project-content">
-                            <span class="project-num">PRJ_01 // COMPETITION ROBOT</span>
+                            <span class="project-num">PRJ_05 // COMPETITION ROBOT</span>
                             <h3>Line Following Robot</h3>
                             <p>An autonomous line following robot of the kind used in robotics competitions such as Robotron and Edvon. A front-mounted sensor array reads the track, an Arduino processes the readings, and an L298 motor driver module steers the drive wheels to keep the robot locked onto the line.</p>
                             <ul class="project-points">
@@ -102,7 +197,7 @@
                             <img src="robo-sumo.webp" alt="Black robo sumo bot with green wheels, a front wedge, two motor driver boards and an Arduino Uno" style="object-position: 50% 42%" loading="lazy">
                         </figure>
                         <div class="project-content">
-                            <span class="project-num">PRJ_02 // COMPETITION ROBOT</span>
+                            <span class="project-num">PRJ_06 // COMPETITION ROBOT</span>
                             <h3>Robo Sumo Bot</h3>
                             <p>A compact, heavy sumo robot of the kind used in robotics competitions such as Robotron and Edvon, built to push opponents out of the ring. A black body with a low front wedge, grippy green wheels, two high-current motor driver boards and an Arduino Uno as the brain.</p>
                             <div class="project-stack">
@@ -121,7 +216,7 @@
                             <img src="robo-race.webp" alt="Four-wheel Arduino robot car on a clear acrylic chassis with yellow geared motors and an L298 driver" style="object-position: 50% 48%" loading="lazy">
                         </figure>
                         <div class="project-content">
-                            <span class="project-num">PRJ_03 // COMPETITION ROBOT</span>
+                            <span class="project-num">PRJ_07 // COMPETITION ROBOT</span>
                             <h3>Robo Race Car</h3>
                             <p>A four-wheel-drive racing robot of the kind used in robotics competitions such as Robotron and Edvon, on a clear acrylic chassis. Four yellow geared motors are driven through an L298 module and controlled by an Arduino Uno, tuned for speed and straight-line stability.</p>
                             <div class="project-stack">
@@ -140,7 +235,7 @@
                             <img src="generator.webp" alt="Homemade generator made from a white container with coils of copper wire wound on nails and paper-roll arms" style="object-position: 50% 42%" loading="lazy">
                         </figure>
                         <div class="project-content">
-                            <span class="project-num">PRJ_04</span>
+                            <span class="project-num">PRJ_08</span>
                             <h3>DIY Generator</h3>
                             <p>A hand-built electric generator made from nails and copper wire coils arranged around a central rotor body, built to understand electromagnetic induction by making it from scratch.</p>
                             <div class="project-stack">
@@ -160,7 +255,7 @@
                             <figure><img src="3d-cube.webp" alt="Red 3D printed cube with a raised letter R held in a hand" style="object-position: 50% 38%" loading="lazy"></figure>
                         </div>
                         <div class="project-content">
-                            <span class="project-num">PRJ_05 // MAKER LAB</span>
+                            <span class="project-num">PRJ_09 // MAKER LAB</span>
                             <h3>3D Design &amp; Printing</h3>
                             <p>Learned to design my own parts in Tinkercad and bring them to life on a Bambu Lab A1 3D printer, from the first digital sketch to a finished physical print.</p>
                             <ul class="project-points">
@@ -186,7 +281,7 @@
                             <figure data-caption="Sorting notes together as a team"><img src="design-thinking-2.webp" alt="Team member sorting sticky notes on two charts laid out on the floor during the affinity diagram session" style="object-position: 50% 40%" loading="lazy"></figure>
                         </div>
                         <div class="project-content">
-                            <span class="project-num">PRJ_06 // DESIGN THINKING</span>
+                            <span class="project-num">PRJ_10 // DESIGN THINKING</span>
                             <h3>Affinity Diagram: Hospital Emergency Room Study</h3>
                             <p>A design thinking project where my team grouped our observations of a public hospital emergency room into themes with an affinity diagram, then turned them into clear problem statements.</p>
                             <ul class="project-points">
@@ -207,7 +302,7 @@
                     </div>
                     <div class="project-card card reveal">
                         <div class="project-content">
-                            <span class="project-num">PRJ_07</span>
+                            <span class="project-num">PRJ_11</span>
                             <h3>AI Assistant for Deaf Community</h3>
                             <p>Designed and developed a machine learning model to bridge communication gaps for deaf individuals, interpreting gestures or visual inputs into actionable data.</p>
                             <div class="project-stack">
@@ -222,7 +317,7 @@
                     </div>
                     <div class="project-card card reveal">
                         <div class="project-content">
-                            <span class="project-num">PRJ_08</span>
+                            <span class="project-num">PRJ_12</span>
                             <h3>Automatic Water Level Sensing Machine</h3>
                             <p>Engineered an automated hardware solution using Arduino and ultrasonic/fluid sensors to monitor and control water levels dynamically.</p>
                             <button type="button" class="video-embed" data-video-id="O_1HE_wIBL8" data-title="Automatic Water Level Sensing Machine demo video" aria-label="Play demo video: Automatic Water Level Sensing Machine">
@@ -243,7 +338,7 @@
                     </div>
                     <div class="project-card card reveal">
                         <div class="project-content">
-                            <span class="project-num">PRJ_09</span>
+                            <span class="project-num">PRJ_13</span>
                             <h3>WordPress Web Solutions &amp; Media</h3>
                             <p>Developed custom WordPress websites integrated with tailored digital media, custom photography, and promotional video content.</p>
                             <div class="project-stack">
