@@ -127,8 +127,8 @@
       "liveUrl": "https://gutech-lms-portal-tau.vercel.app"
     },
     {
-      "title": "Pause: Digital Well-Being App",
-      "description": "Private, mobile-first well-being PWA for university students, built for a Digital Well-Being and Mental Health midterm.",
+      "title": "Sukoon: Digital Well-Being App",
+      "description": "Sukoon (Arabic for calm) is a private, mobile-first well-being PWA for university students, built for a Digital Well-Being and Mental Health midterm.",
       "highlights": [
         "Pause check-in, focus sessions and night wind-down",
         "Pomodoro, weekly goals, spaced-repetition flashcards and focus garden",
@@ -144,8 +144,11 @@
       "repo": "https://github.com/Phoenix191001/Digital-Wellbeing-App",
       "liveUrl": "https://pause-gamma.vercel.app",
       "images": [
-        "pause-home.webp",
-        "pause-study.webp"
+        "sukoon-home.webp",
+        "sukoon-study.webp",
+        "sukoon-do.webp",
+        "sukoon-safe.webp",
+        "sukoon-insights.webp"
       ]
     },
     {

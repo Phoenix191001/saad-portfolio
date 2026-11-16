@@ -979,3 +979,20 @@ img { max-width: 100%; display: block; }
 
     .nav-actions { margin: auto 0 0; padding: 0 12px; justify-content: flex-start; }
 }
+
+/* Phone screenshot strip, technology logos */
+.phone-strip { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; padding: 22px 22px 0; }
+.phone-strip figure { aspect-ratio: 9 / 19.5; overflow: hidden; border: 1px solid var(--border-strong); border-radius: 14px; background: #000; cursor: zoom-in; box-shadow: 0 10px 30px -12px var(--accent-glow); transition: var(--transition); }
+.phone-strip figure:hover { transform: translateY(-4px); border-color: var(--accent-color); }
+.phone-strip img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+.stack-tag.has-icon { display: inline-flex; align-items: center; gap: 6px; }
+.tech-icon { display: inline-block; object-fit: contain; flex: none; }
+[data-theme="dark"] .invert-dark { filter: invert(1); }
+.tech-strip { margin-bottom: 36px; padding: 22px 24px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
+.tech-title { font-family: var(--font-mono); font-size: 1rem; font-weight: 500; color: var(--accent-color); margin-bottom: 16px; }
+.tech-strip ul { display: flex; flex-wrap: wrap; gap: 14px 22px; }
+.tech-strip li { display: flex; align-items: center; gap: 9px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-color); }
+@media (max-width: 992px) {
+  .phone-strip { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 6px; }
+  .phone-strip figure { flex: 0 0 min(46vw, 200px); scroll-snap-align: start; }
+}
