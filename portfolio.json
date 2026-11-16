@@ -165,7 +165,8 @@
         "JavaScript",
         "Vercel"
       ],
-      "repo": "https://github.com/Phoenix191001/Pharmacy-and-Doctor-Connection"
+      "repo": "https://github.com/Phoenix191001/Pharmacy-and-Doctor-Connection",
+      "liveUrl": "https://pharmacy-and-doctor-connection.vercel.app"
     },
     {
       "title": "Calculator and Periodic Table",
