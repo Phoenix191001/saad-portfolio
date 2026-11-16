@@ -930,3 +930,9 @@ img { max-width: 100%; display: block; }
 .cert-body .card-link { margin-top: 8px; font-size: 0.82rem; }
 @media (max-width: 992px) { .cert-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .cert-grid { grid-template-columns: 1fr; } }
+
+/* Plain link under an embedded video */
+.video-link { display: inline-flex; align-items: center; gap: 8px; margin: -12px 0 18px; font-family: var(--font-mono); font-size: 0.78rem; color: var(--accent-color); }
+.video-link:hover { color: var(--accent-2); }
+.video-embed.vertical + .video-link { display: flex; justify-content: center; margin-top: -12px; }
+.achievement-text .video-link { margin: 18px 0 0; }
