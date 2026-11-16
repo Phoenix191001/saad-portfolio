@@ -1014,3 +1014,9 @@ img { max-width: 100%; display: block; }
 
 /* CV download */
 .cv-cta { margin-top: 36px; text-align: center; }
+
+/* Download CV button in the menu */
+.nav-links .nav-cv a { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 9px 14px; font-weight: 600; color: var(--on-accent); background: var(--accent-color); border: 1px solid var(--accent-color); border-left-width: 1px; border-radius: var(--radius); box-shadow: 0 0 18px var(--accent-glow); }
+.nav-links .nav-cv a:hover { color: var(--on-accent); background: var(--accent-color); transform: translateY(-2px); box-shadow: 0 0 28px var(--accent-glow); }
+@media (min-width: 1241px) { .nav-links .nav-cv { margin-bottom: 10px; } }
+@media (max-width: 1240px) { .nav-links .nav-cv { border-top: 0 !important; padding: 10px 0 6px; } .nav-links .nav-cv a { padding: 10px 14px; } .nav-links .nav-cv + li { border-top: 0 !important; } }
