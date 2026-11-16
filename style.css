@@ -1011,3 +1011,6 @@ img { max-width: 100%; display: block; }
 .shot-strip.four { grid-template-columns: repeat(4, 1fr); }
 .shot-strip.four figure { aspect-ratio: 16 / 11; }
 @media (max-width: 992px) { .shot-strip.four figure { flex: 0 0 min(82vw, 420px); } }
+
+/* CV download */
+.cv-cta { margin-top: 36px; text-align: center; }

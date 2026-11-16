@@ -27,7 +27,8 @@
         "icon": "fa-brands fa-github"
       }
     ],
-    "url": "https://saad-portfolio-saad-4985.vercel.app"
+    "url": "https://saad-portfolio-saad-4985.vercel.app",
+    "resume": "Saad_Azfar_Resume.pdf"
   },
   "intro": [
     "I'm a student at GUTECH in Karachi, studying computer science. I picked up mechatronics and Arduino at The Lab School, and I like building things that actually work: robots that follow lines and push opponents out of a ring, a water level controller, and parts I design myself in Tinkercad and print on a 3D printer.",
