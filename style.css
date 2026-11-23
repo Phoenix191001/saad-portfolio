@@ -747,7 +747,7 @@ img { max-width: 100%; display: block; }
 }
 
 /* Contact */
-.contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; max-width: 920px; margin: 0 auto; }
+.contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 920px; margin: 0 auto; }
 
 .contact-card {
     display: flex;

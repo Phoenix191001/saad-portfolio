@@ -25,6 +25,12 @@
         "username": "Phoenix191001",
         "url": "https://github.com/Phoenix191001",
         "icon": "fa-brands fa-github"
+      },
+      {
+        "network": "LeetCode",
+        "username": "yjwv2fIAaK",
+        "url": "https://leetcode.com/u/yjwv2fIAaK/",
+        "icon": "fa-solid fa-code"
       }
     ],
     "url": "https://saad-portfolio-saad-4985.vercel.app",
